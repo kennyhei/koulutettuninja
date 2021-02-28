@@ -1,13 +1,15 @@
 @font-face {
-    font-family: 'Noto Sans JP';
-    src: local("Noto Sans JP"),
+    font-family: 'NotoSansJP-Regular';
+    font-weight: normal;
+    font-style: normal;
+    src: local("NotoSansJP-Regular"),
         url(~assets/fonts/NotoSansJP-Regular.woff2) format("font/woff2"),
         url(~assets/fonts/NotoSansJP-Regular.woff) format("font/woff");
     font-display: swap;
 }
 
 html body {
-    font-family: 'Noto Sans JP', Arial, sans-serif;
+    font-family: 'NotoSansJP-Regular', Arial, sans-serif;
 }
 .mx-auto {
     margin: 0 auto;
