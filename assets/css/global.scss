@@ -23,7 +23,18 @@ html body {
 .c-pointer {
     cursor: pointer;
 }
-
+.title {
+    letter-spacing: 1px;
+}
+.hero a {
+    color: #fff;
+    &:hover {
+        color: lightgrey;
+    }
+}
+iframe {
+    width: 100%;
+}
 @media (min-width: 500px) {
     .font-sm-18 {
         font-size: 18px;

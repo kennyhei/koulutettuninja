@@ -26,20 +26,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss">
-.title {
-  letter-spacing: 1px;
-}
-.hero a {
-  color: #fff;
-
-  &:hover {
-    color: lightgrey;
-  }
-}
-
-iframe {
-  width: 100%;
-}
-</style>
