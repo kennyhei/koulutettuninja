@@ -1,5 +1,7 @@
 # ninjamarttinen
 
+Home page @ [koulutettuninja.fi](https://koulutettuninja.fi). Created with Nuxt.js.
+
 ## Build Setup
 
 ```bash
