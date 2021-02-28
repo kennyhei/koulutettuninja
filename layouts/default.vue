@@ -13,7 +13,7 @@
         <b-navbar-item tag="router-link" :to="{ path: '/' }">
           <img
             src="~assets/images/logo.png"
-            alt="Buefy"
+            alt="Koulutettu Ninja"
             height="28"
           >
         </b-navbar-item>
