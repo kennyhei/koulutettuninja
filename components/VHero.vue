@@ -39,7 +39,9 @@
   background: rgb(49,122,149);
   background: linear-gradient(0deg, rgba(49,122,149,1) 0%, rgba(2,0,36,1) 100%);
 }
-
+.title {
+  letter-spacing: 1px;
+}
 .avatar {
   img {
     object-fit: cover;
