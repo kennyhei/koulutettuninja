@@ -22,7 +22,7 @@
         <b-navbar-item v-smooth-scroll href="#introduction" class="has-text-white">
           Minusta
         </b-navbar-item>
-        <b-navbar-item v-smooth-scroll href="#pricing" class="has-text-white">
+        <b-navbar-item v-smooth-scroll="{ offset: -30 }" href="#pricing" class="has-text-white">
           Hinnasto
         </b-navbar-item>
         <b-navbar-item v-smooth-scroll href="#contact" class="has-text-white">
