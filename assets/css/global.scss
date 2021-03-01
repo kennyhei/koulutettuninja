@@ -1,15 +1,13 @@
 @font-face {
     font-family: 'NotoSansJP-Regular';
-    font-weight: normal;
-    font-style: normal;
-    src: local("NotoSansJP-Regular"),
-        url(~assets/fonts/NotoSansJP-Regular.woff2) format("font/woff2"),
-        url(~assets/fonts/NotoSansJP-Regular.woff) format("font/woff");
-    font-display: swap;
+    src: url(~assets/fonts/NotoSansJP-Regular.woff2) format("woff2"),
+         url(~assets/fonts/NotoSansJP-Regular.woff) format("woff"),
+         url(~assets/fonts/NotoSansJP-Regular.eot) format("eot"),
+         url(~assets/fonts/NotoSansJP-Regular.otf) format("truetype");
 }
 
 html body {
-    font-family: 'NotoSansJP-Regular', Arial, sans-serif;
+    font-family: "NotoSansJP-Regular", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 .mx-auto {
     margin: 0 auto;
@@ -22,9 +20,6 @@ html body {
 }
 .c-pointer {
     cursor: pointer;
-}
-.title {
-    letter-spacing: 1px;
 }
 .hero a {
     color: #fff;
