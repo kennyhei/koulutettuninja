@@ -20,11 +20,11 @@
         </div>
         <div class="font-sm-18"><a href="https://varaa.timma.fi/hyvanolonhaltijattaret">varaa.timma.fi/hyvanolonhaltijattaret</a></div>
         <div class="is-flex is-justify-content-space-between font-sm-18">
-          <div class="mx-1">
+          <div class="mr-1">
             <b-icon icon="instagram" size="is-small" />
             <a href="https://instagram.com/koulutettu_ninja">koulutettu_ninja</a>
           </div>
-          <div class="mx-1">
+          <div class="ml-1">
             <b-icon icon="facebook" size="is-small" />
             <a href="https://facebook.com/koulutettu.marttinen">koulutettu.marttinen</a>
           </div>
