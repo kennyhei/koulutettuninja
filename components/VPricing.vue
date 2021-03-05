@@ -4,6 +4,7 @@
     <div class="content font-18">
       <p>Käytän maskia hieronnan aikana (ja muutenkin asiakkaiden läsnä ollessa), joten hierontaan voi saapua levollisin mielin. Myös tehokas käsien ja työtilan hygieniasta huolehtiminen takaa sen, että tänne on turvallista tulla ja täällä on turvallista olla 😊</p>
       <p>Asiakkaalle maski on vapaavalintainen, mutta suositeltava 👍</p>
+      <p><b>Maksutavat:</b> Hieronnat voit maksaa pankkikortin, yleisimpien luottokorttien ja käteisen lisäksi ePassilla. Huom! ePassin on oltava Hyvinvointipassi.</p>
     </div>
     <div class="columns is-desktop">
       <div class="column">
