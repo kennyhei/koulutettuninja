@@ -9,30 +9,48 @@
       </p>
       <div class="avatar mb-2">
         <img
-          src="~assets/images/ninni_resized2.jpg"
+          :src="settings.header_profile_picture"
           loading="lazy"
           alt="Ninni"
         >
       </div>
       <div class="is-flex is-flex-direction-column has-text-light has-text-centered wow animate__animated animate__fadeIn">
         <div class="font-sm-18">
-          <a href="tel:+358503239499">☎️ 050 323 9499</a>
+          <b-icon icon="home" size="is-small" />
+          <a :href="`tel:${intlPhone(settings.contact.phone)}`">{{ settings.contact.phone }}</a>
         </div>
-        <div class="font-sm-18"><a href="https://varaa.timma.fi/hyvanolonhaltijattaret">varaa.timma.fi/hyvanolonhaltijattaret</a></div>
+        <div class="font-sm-18">
+          <b-icon icon="calendar" size="is-small" />
+          <a :href="settings.contact.booking_url">{{ settings.contact.booking_url|withoutHttp }}</a>
+          </div>
         <div class="is-flex is-justify-content-space-between font-sm-18">
           <div class="mr-1">
             <b-icon icon="instagram" size="is-small" />
-            <a href="https://instagram.com/koulutettu_ninja">koulutettu_ninja</a>
+            <a :href="settings.contact.instagram_url">{{ settings.contact.instagram_url|accountName }}</a>
           </div>
           <div class="ml-1">
             <b-icon icon="facebook" size="is-small" />
-            <a href="https://facebook.com/koulutettu.marttinen">koulutettu.marttinen</a>
+            <a :href="settings.contact.facebook_url">{{ settings.contact.facebook_url|accountName }}</a>
           </div>
         </div>
       </div>
     </div>
   </section>
 </template>
+
+<script>
+import { formatMixin } from '~/mixins/index.js'
+
+export default {
+  props: {
+    settings: {
+      type: Object,
+      default: null
+    }
+  },
+  mixins: [formatMixin]
+}
+</script>
 
 <style lang="scss" scoped>
 .ninja-bg {

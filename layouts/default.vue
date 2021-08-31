@@ -28,6 +28,16 @@
         <b-navbar-item v-smooth-scroll href="#contact" class="has-text-white">
           Yhteystiedot
         </b-navbar-item>
+        <!--
+        <b-navbar-item
+          class="has-text-white"
+          v-for="content in state.contents"
+          v-smooth-scroll="{ offset: -30 }"
+          :key="content.id"
+        >
+          {{ content.navbar_title }}
+        </b-navbar-item>
+        -->
       </template>
     </b-navbar>
     <!-- Content -->
@@ -36,10 +46,13 @@
 </template>
 
 <script>
+import store from '~/store/index.js'
+
 export default {
   data () {
     return {
-      fixedTop: false
+      fixedTop: false,
+      state: store.state
     }
   },
   mounted () {
