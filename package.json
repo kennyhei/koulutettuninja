@@ -11,11 +11,11 @@
     "lint": "yarn lint:js"
   },
   "dependencies": {
-    "@nuxt/http": "^0.6.4",
     "@nuxtjs/robots": "^2.4.2",
     "@nuxtjs/sitemap": "^2.4.0",
     "animate.css": "^4.1.1",
     "core-js": "^3.8.3",
+    "dotenv": "^10.0.0",
     "nuxt": "^2.14.12",
     "nuxt-buefy": "^0.4.4",
     "wowjs": "^1.1.3"

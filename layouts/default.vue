@@ -19,25 +19,18 @@
         </b-navbar-item>
       </template>
       <template #start>
-        <b-navbar-item v-smooth-scroll href="#introduction" class="has-text-white">
-          Minusta
-        </b-navbar-item>
-        <b-navbar-item v-smooth-scroll="{ offset: -30 }" href="#pricing" class="has-text-white">
-          Hinnasto
+        <b-navbar-item
+          class="has-text-white"
+          v-for="item in items"
+          :href="`#${item.id}`"
+          :key="item.id"
+          v-smooth-scroll="{ offset: -30 }"
+        >
+          {{item.title}}
         </b-navbar-item>
         <b-navbar-item v-smooth-scroll href="#contact" class="has-text-white">
           Yhteystiedot
         </b-navbar-item>
-        <!--
-        <b-navbar-item
-          class="has-text-white"
-          v-for="content in state.contents"
-          v-smooth-scroll="{ offset: -30 }"
-          :key="content.id"
-        >
-          {{ content.navbar_title }}
-        </b-navbar-item>
-        -->
       </template>
     </b-navbar>
     <!-- Content -->
@@ -46,18 +39,33 @@
 </template>
 
 <script>
-import store from '~/store/index.js'
+import { mapState } from 'vuex'
+import { sectionMixin } from '~/mixins/index.js'
 
 export default {
+  mixins: [sectionMixin],
   data () {
     return {
       fixedTop: false,
-      state: store.state
+      items: []
     }
   },
+  computed: {
+    ...mapState(['contents'])
+  },
+  created () {
+    this.contents.forEach(content => {
+      const sectionId = this.getSectionId(content)
+      this.items.push({
+        id: sectionId,
+        title: content.navbar_title || content.title
+      })
+    })
+  },
   mounted () {
+    const sectionId = '#' + this.items[0].id
     window.onscroll = () => {
-      const scrollToElem = document.querySelector('#introduction').getBoundingClientRect().top
+      const scrollToElem = document.querySelector(sectionId).getBoundingClientRect().top
       if (scrollToElem <= 0) {
         this.fixedTop = true
       } else {

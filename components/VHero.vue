@@ -39,16 +39,14 @@
 </template>
 
 <script>
+import { mapState } from 'vuex'
 import { formatMixin } from '~/mixins/index.js'
 
 export default {
-  props: {
-    settings: {
-      type: Object,
-      default: null
-    }
-  },
-  mixins: [formatMixin]
+  mixins: [formatMixin],
+  computed: {
+    ...mapState(['settings'])
+  }
 }
 </script>
 

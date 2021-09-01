@@ -1,8 +1,6 @@
 <template>
   <section id="introduction" class="section pb-5">
-    <div class="block">
-      <h2 class="title">Moikka! 👋</h2>
-    </div>
+    <h2 class="title">Moikka! 👋</h2>
     <div id="description" :class="{ 'expanded': isExpanded }">
       <div class="content font-18">
         <p>Marttisen Ninja tässä. Tarjoan monipuolisia hierontapalveluja Keravalla, Jaakkolan kaupunginosassa. Löydät minut osoitteesta Jaakkolantie 11, samoista tiloista Hyvän Olon Haltijattaret Oy:n kanssa.</p>

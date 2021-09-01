@@ -1,3 +1,7 @@
+import dotenv from 'dotenv'
+
+dotenv.config({ path: '.env' })
+
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'server',
@@ -46,8 +50,7 @@ export default {
     // https://go.nuxtjs.dev/buefy
     'nuxt-buefy',
     '@nuxtjs/robots',
-    '@nuxtjs/sitemap',
-    '@nuxt/http'
+    '@nuxtjs/sitemap'
   ],
   // Sitemap
   sitemap: {

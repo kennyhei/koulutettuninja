@@ -1,40 +1,34 @@
 <template>
   <div>
-    <v-hero :settings="settings" />
+    <v-hero />
     <!-- Contents -->
-    <div class="container">
-      <v-introduction />
-      <v-pricing />
+    <div class="container" style="padding-top: 2.25em;">
+      <v-content
+        v-for="content in contents"
+        :key="content.order"
+        :content="content"
+      ></v-content>
     </div>
-    <v-footer :contact-info="settings.contact" />
+    <v-footer />
   </div>
 </template>
 
 <script>
-import store from '~/store/index.js'
+import { mapState } from 'vuex'
 
 import VHero from '~/components/VHero'
-import VIntroduction from '~/components/VIntroduction'
-import VPricing from '~/components/VPricing'
+import VContent from '~/components/VContent'
 import VFooter from '~/components/VFooter'
 
 export default {
   name: 'HomePage',
   components: {
     VHero,
-    VIntroduction,
-    VPricing,
+    VContent,
     VFooter
   },
-  async asyncData ({ $http }) {
-    // TODO: Refactor + use define API URL env variable
-    const settings = await $http.$get('http://localhost:8000/api/general_settings/1')
-    const contents = await $http.$get('http://localhost:8000/api/contents')
-    const services = await $http.$get('http://localhost:8000/api/categories')
-    store.state.settings = settings
-    store.state.contents = contents
-    store.state.services = services
-    return { settings, contents, services }
+  computed: {
+    ...mapState(['contents'])
   }
 }
 </script>

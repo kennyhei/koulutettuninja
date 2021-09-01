@@ -1,25 +1,8 @@
 <template>
-  <section id="pricing" class="section pt-5">
-    <h1 class="title">Hinnasto</h1>
-    <div class="content font-18">
-      <p>Käytän maskia hieronnan aikana (ja muutenkin asiakkaiden läsnä ollessa), joten hierontaan voi saapua levollisin mielin. Myös tehokas käsien ja työtilan hygieniasta huolehtiminen takaa sen, että tänne on turvallista tulla ja täällä on turvallista olla 😊</p>
-      <p>Asiakkaalle maski on vapaavalintainen, mutta suositeltava 👍</p>
-      <p><b>Maksutavat:</b> Hieronnat voit maksaa pankkikortin, yleisimpien luottokorttien ja käteisen lisäksi ePassilla. Huom! ePassin on oltava Hyvinvointipassi.</p>
-    </div>
-    <div class="columns is-desktop">
-      <div class="column">
-        <v-services :service="services.classic" />
-      </div>
-      <div class="column">
-        <v-services :service="services.hotstone" />
-      </div>
-    </div>
-    <div class="columns">
-      <div class="column">
-        <v-services :service="services.head" />
-      </div>
-      <div class="column">
-        <v-services :service="services.other" />
+  <div class="pt-5">
+    <div class="columns is-desktop is-flex-wrap-wrap">
+      <div class="column is-half-desktop" v-for="category in pricing.categories">
+        <v-pricing-category :category="category" />
       </div>
     </div>
     <div class="columns">
@@ -27,7 +10,7 @@
         <b-button
           size="is-medium"
           tag="a"
-          href="https://varaa.timma.fi/hyvanolonhaltijattaret"
+          :href="settings.contact.booking_url"
           target="_blank"
           style="color: #fff;"
         >
@@ -35,60 +18,20 @@
         </b-button>
       </div>
     </div>
-  </section>
+  </div>
 </template>
 
 <script>
-import VServices from '~/components/VServices'
+import { mapState } from 'vuex'
+
+import VPricingCategory from '~/components/VPricingCategory'
 
 export default {
   components: {
-    VServices
+    VPricingCategory
   },
-  data () {
-    return {
-      services: {
-        classic: {
-          title: 'Klassinen hieronta',
-          items: [
-            { name: 'Klassinen hieronta (30 min)', price: '30 €' },
-            { name: 'Klassinen hieronta (45 min)', price: '40 €' },
-            { name: 'Klassinen hieronta (60 min)', price: '50 €' },
-            { name: 'Klassinen hieronta (90 min)', price: '65 €' },
-            { name: 'Hieronta suklaaöljyllä (30 min)', price: '35 €' },
-            { name: 'Hieronta suklaaöljyllä (45 min)', price: '45 €' },
-            { name: 'Hieronta suklaaöljyllä (60 min)', price: '55 €' }
-          ]
-        },
-        hotstone: {
-          title: 'Kuumakivihieronta',
-          tooltip: '<p>Hieronta sisältää rentouttavaa ja lämmittävää laavakivikäsittelyä sekä manuaalista hierontaa.<br><br>Hieronnan yhteydessä käytettävät lämpimät kivet toimivat erinomaisena lämpöhoitona hierottaville alueille, kuten pohkeille, reisille, selälle ja hartioille.</p>',
-          items: [
-            { name: 'Hieronta lämpöhoidolla (30 min)', price: '38 €' },
-            { name: 'Hieronta lämpöhoidolla (45 min)', price: '47 €' },
-            { name: 'Hieronta lämpöhoidolla (60 min)', price: '58 €' },
-            { name: 'Hieronta lämpöhoidolla (75 min)', price: '65 €' },
-            { name: 'Hieronta lämpöhoidolla (90 min)', price: '72 €' }
-          ]
-        },
-        head: {
-          title: 'Päähieronnat',
-          tooltip: 'Pään, niskan ja hartioiden alueelle kohdistuva hieronta.',
-          items: [
-            { name: 'Pään alueen hieronta (30 min)', price: '30 €' },
-            { name: 'Pään alueen hieronta (45 min)', price: '40 €' }
-          ]
-        },
-        other: {
-          title: 'Muut hieronnat',
-          tooltip: '<p>Hierontaa yhdistettynä selän tai raajojen imukuppikäsittelyyn.<br><br>Aluksi lämmitän ihon sivelemällä siihen hierontaöljyä. Tämän jälkeen käsittelen ihoa ja lihaksistoa imukupeilla. Imukupit voivat jäädä hetkeksi paikalleen, tai niitä voidaan liikutella. Imukuppien luoma alipaine nostaa kevyesti ihoa ja sen alaisia kudoksia, virkistäen verenkiertoa ja rentouttaen asiakkaan oloa.</p>',
-          items: [
-            { name: 'Imukuppihieronta (30 min)', price: '35 €' },
-            { name: 'Imukuppihieronta (45 min)', price: '45 €' }
-          ]
-        }
-      }
-    }
+  computed: {
+    ...mapState(['pricing', 'settings'])
   }
 }
 </script>
