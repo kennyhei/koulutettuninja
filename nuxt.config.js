@@ -42,7 +42,8 @@ export default {
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
     // https://go.nuxtjs.dev/eslint
-    '@nuxtjs/eslint-module'
+    '@nuxtjs/eslint-module',
+    'nuxt-purgecss'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -55,6 +56,31 @@ export default {
   // Sitemap
   sitemap: {
     hostname: 'https://koulutettuninja.fi'
+  },
+
+  // PurgeCSS
+  purgeCSS: {
+    enabled: true,
+    // Scan CSS classes from these paths and
+    // do not purge them if they are in use
+    paths: [
+      'components/**/*.vue',
+      'layouts/**/*.vue',
+      'pages/**/*.vue',
+      'plugins/**/*.js',
+      // b-navbar
+      'node_modules/buefy/src/components/navbar/*.vue',
+      'node_modules/buefy/src/scss/components/_navbar.scss',
+      // b-tooltip
+      'node_modules/buefy/src/components/tooltip/*.vue',
+      'node_modules/buefy/src/scss/components/_tooltip.scss',
+      // b-icon
+      'node_modules/buefy/src/components/icon/*.vue',
+      'node_modules/buefy/src/scss/components/_icon.scss',
+      // b-button
+      'node_modules/buefy/src/components/button/*.vue'
+    ],
+    styleExtensions: ['.css', '.scss']
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

@@ -64,14 +64,14 @@ export default {
   },
   mounted () {
     const sectionId = '#' + this.items[0].id
-    window.onscroll = () => {
+    window.addEventListener('scroll', () => {
       const scrollToElem = document.querySelector(sectionId).getBoundingClientRect().top
       if (scrollToElem <= 0) {
         this.fixedTop = true
       } else {
         this.fixedTop = false
       }
-    }
+    }, { passive: true })
   }
 }
 </script>
