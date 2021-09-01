@@ -10,7 +10,7 @@
       </b-tooltip>
     </h1>
     <div v-for="service in category.services" :key="`${service.name}-${service.length}`" class="is-flex is-flex-wrap-wrap">
-      <span class="mr-1"><span class="dash">–</span> {{ service.name }} ({{service.length}} min)</span> <b><span>{{ Number(service.price) }} €</span></b>
+      <span class="mr-1"><span class="dash">–</span> {{ service.name }} ({{ service.length }} min)</span> <b><span>{{ Number(service.price) }} €</span></b>
     </div>
   </div>
 </template>
@@ -18,7 +18,10 @@
 <script>
 export default {
   props: {
-    category: Object,
+    category: {
+      type: Object,
+      default: null
+    },
     animation: {
       type: String,
       default: ''

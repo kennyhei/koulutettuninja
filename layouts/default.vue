@@ -20,13 +20,13 @@
       </template>
       <template #start>
         <b-navbar-item
-          class="has-text-white"
           v-for="item in items"
-          :href="`#${item.id}`"
           :key="item.id"
-          v-smooth-scroll="{ offset: -30 }"
+          v-smooth-scroll="{ offset: -35 }"
+          :href="`#${item.id}`"
+          class="has-text-white"
         >
-          {{item.title}}
+          {{ item.title }}
         </b-navbar-item>
         <b-navbar-item v-smooth-scroll href="#contact" class="has-text-white">
           Yhteystiedot
@@ -54,7 +54,7 @@ export default {
     ...mapState(['contents'])
   },
   created () {
-    this.contents.forEach(content => {
+    this.contents.forEach((content) => {
       const sectionId = this.getSectionId(content)
       this.items.push({
         id: sectionId,

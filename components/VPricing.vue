@@ -1,7 +1,7 @@
 <template>
   <div class="pt-5">
     <div class="columns is-desktop is-flex-wrap-wrap">
-      <div class="column is-half-desktop" v-for="category in pricing.categories">
+      <div v-for="category in pricing.categories" :key="category.order" class="column is-half-desktop">
         <v-pricing-category :category="category" />
       </div>
     </div>

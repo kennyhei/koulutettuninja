@@ -7,7 +7,7 @@
         v-for="content in contents"
         :key="content.order"
         :content="content"
-      ></v-content>
+      />
     </div>
     <v-footer />
   </div>

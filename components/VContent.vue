@@ -3,21 +3,21 @@
     <h2 class="title">{{ content.title }}</h2>
     <div id="description" :class="{ 'expanded': isExpanded, 'collapse-mobile': content.collapse_long_text }">
       <div class="content font-18">
-        <p v-for="text in paragraphedText" v-html="text"></p>
+        <p v-for="(text, index) in paragraphedText" :key="index" v-html="text" />
       </div>
     </div>
     <!-- Expand text on mobile if "collapse_long_text" is set to true -->
     <div
       v-if="!isExpanded"
-      @click="isExpanded = true"
       class="c-pointer expand is-size-5"
       :class="{ 'collapse-mobile': content.collapse_long_text }"
+      @click="isExpanded = true"
     >
       <b-icon icon="plus-circle-outline" style="position: relative; top: 2px;" />
       <b>Lue lisää</b>
     </div>
     <!-- Pricing -->
-    <v-pricing v-if="content.show_pricing"></v-pricing>
+    <v-pricing v-if="content.show_pricing" />
   </section>
 </template>
 
@@ -31,19 +31,22 @@ export default {
   },
   mixins: [sectionMixin],
   props: {
-    content: Object
-  },
-  computed: {
-    sectionId: function () {
-      return this.getSectionId(this.content)
-    },
-    paragraphedText: function () {
-      return this.content.text.split('\n')
+    content: {
+      type: Object,
+      default: null
     }
   },
   data () {
     return {
       isExpanded: false
+    }
+  },
+  computed: {
+    sectionId () {
+      return this.getSectionId(this.content)
+    },
+    paragraphedText () {
+      return this.content.text.split('\n')
     }
   }
 }

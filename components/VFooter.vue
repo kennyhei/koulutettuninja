@@ -17,9 +17,9 @@
         <div class="column contact">
           <div class="address mb-3">
             <p><b><b-icon icon="home" size="is-small" /> Osoite:</b></p>
-            <p>{{settings.contact.company_name}}</p>
-            <p>{{settings.contact.location_street_address}}</p>
-            <p>{{settings.contact.location_postcode}} {{settings.contact.location_city}}</p>
+            <p>{{ settings.contact.company_name }}</p>
+            <p>{{ settings.contact.location_street_address }}</p>
+            <p>{{ settings.contact.location_postcode }} {{ settings.contact.location_city }}</p>
           </div>
           <div class="phone mb-3">
             <p><b><b-icon icon="phone" size="is-small" /> Puhelin:</b></p>

@@ -22,7 +22,7 @@
         <div class="font-sm-18">
           <b-icon icon="calendar" size="is-small" />
           <a :href="settings.contact.booking_url">{{ settings.contact.booking_url|withoutHttp }}</a>
-          </div>
+        </div>
         <div class="is-flex is-justify-content-space-between font-sm-18">
           <div class="mr-1">
             <b-icon icon="instagram" size="is-small" />
