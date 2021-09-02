@@ -16,6 +16,8 @@ module.exports = {
   // add your custom rules here
   rules: {
     'singleline-html-element-content-newline': 'off',
-    'vue/singleline-html-element-content-newline': 'off'
+    'vue/singleline-html-element-content-newline': 'off',
+    'vue/no-v-html': 'off',
+    'arrow-parens': '1'
   }
 }

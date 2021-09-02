@@ -31,6 +31,16 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.tooltip-content {
+  padding: 10px !important;
+  background: #000 !important;
+  &:before {
+    border-top-color: #000 !important;
+  }
+}
+.tooltip-trigger {
+  cursor: pointer;
+}
 .services div.is-flex > span:first-child {
   display: inline-block;
   width: 270px;

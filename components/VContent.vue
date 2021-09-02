@@ -18,10 +18,26 @@
     </div>
     <!-- Pricing -->
     <v-pricing v-if="content.show_pricing" />
+    <!-- Booking button -->
+    <div v-if="content.show_booking_btn" class="columns mt-3">
+      <div class="column">
+        <b-button
+          size="is-medium"
+          tag="a"
+          :href="settings.contact.booking_url"
+          target="_blank"
+          style="color: #fff;"
+        >
+          Varaa aika
+        </b-button>
+      </div>
+    </div>
   </section>
 </template>
 
 <script>
+import { mapState } from 'vuex'
+
 import VPricing from '~/components/VPricing'
 import { sectionMixin } from '~/mixins/index.js'
 
@@ -47,7 +63,8 @@ export default {
     },
     paragraphedText () {
       return this.content.text.split('\n')
-    }
+    },
+    ...mapState(['settings'])
   }
 }
 </script>
