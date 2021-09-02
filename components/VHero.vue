@@ -16,7 +16,7 @@
       </div>
       <div class="is-flex is-flex-direction-column has-text-light has-text-centered wow animate__animated animate__fadeIn">
         <div class="font-sm-18">
-          <b-icon icon="home" size="is-small" />
+          <b-icon icon="phone" size="is-small" />
           <a :href="`tel:${intlPhone(settings.contact.phone)}`">{{ settings.contact.phone }}</a>
         </div>
         <div class="font-sm-18">
