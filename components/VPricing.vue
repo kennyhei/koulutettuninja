@@ -22,22 +22,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss">
-.button {
-  background-color: rgb(0, 209, 178);
-  border: none;
-  &:hover {
-    background-color: rgba(0, 209, 178, .9);
-  }
-  &:focus {
-    outline: 0 !important;
-    border-color: unset !important;
-  }
-}
-@media (max-width: 700px) {
-  .button {
-    width: 100%;
-  }
-}
-</style>

@@ -35,3 +35,31 @@ iframe {
         font-size: 18px;
     }
 }
+/* Tooltip */
+.tooltip-content {
+    padding: 10px !important;
+    background: rgb(45, 120, 146) !important;
+    &:before {
+        border-top-color: rgb(58, 120, 146) !important;
+    }
+}
+.tooltip-trigger {
+    cursor: pointer;
+}
+/* Button */
+.button {
+    background-color: rgb(0, 209, 178);
+    border: none;
+    &:hover {
+        background-color: rgba(0, 209, 178, .9);
+    }
+    &:focus {
+        outline: 0 !important;
+        border-color: unset !important;
+    }
+}
+@media (max-width: 700px) {
+    .button {
+        width: 100%;
+    }
+}
