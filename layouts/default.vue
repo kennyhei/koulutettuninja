@@ -31,6 +31,9 @@
         <b-navbar-item v-smooth-scroll href="#contact" class="has-text-white">
           Yhteystiedot
         </b-navbar-item>
+        <b-navbar-item :href="settings.contact.booking_url" class="has-text-white">
+          Ajanvaraus
+        </b-navbar-item>
       </template>
     </b-navbar>
     <!-- Content -->
@@ -51,7 +54,7 @@ export default {
     }
   },
   computed: {
-    ...mapState(['contents'])
+    ...mapState(['contents', 'settings'])
   },
   created () {
     this.contents.forEach((content) => {
