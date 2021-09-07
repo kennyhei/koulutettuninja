@@ -31,7 +31,7 @@ export default {
     ...mapState(['contents'])
   },
   mounted () {
-    this.$gtag.pageview(this.$route);
+    this.$gtag.pageview(this.$route)
   }
 }
 </script>
