@@ -31,7 +31,6 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
-    '@/plugins/wow.client.js',
     '@/plugins/vue-smooth-scroll.client.js',
     '@/plugins/vue-gtag.js'
   ],
@@ -60,11 +59,6 @@ export default {
     hostname: 'https://koulutettuninja.fi'
   },
 
-  /*
-  googleAnalytics: {
-    id: process.env.GOOGLE_ANALYTICS_ID
-  },
-  */
   publicRuntimeConfig: {
     googleAnalytics: {
       id: process.env.GOOGLE_ANALYTICS_ID

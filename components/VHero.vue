@@ -1,10 +1,10 @@
 <template>
   <section class="hero ninja-bg">
     <div class="hero-body is-flex is-flex-direction-column is-align-items-center">
-      <h1 class="title has-text-centered has-text-light wow animate__animated animate__fadeInDown">
+      <h1 class="title has-text-centered has-text-light animate__animated animate__fadeInDown">
         Ninja Marttinen
       </h1>
-      <p class="subtitle has-text-centered has-text-light wow animate__animated animate__fadeInDown">
+      <p class="subtitle has-text-centered has-text-light animate__animated animate__fadeInDown">
         Koulutettu hieroja &amp; urheiluhieroja
       </p>
       <div class="avatar mb-2">
@@ -14,7 +14,7 @@
           alt="Ninni"
         >
       </div>
-      <div class="is-flex is-flex-direction-column has-text-light has-text-centered wow animate__animated animate__fadeIn">
+      <div class="is-flex is-flex-direction-column has-text-light has-text-centered animate__animated animate__fadeIn">
         <div class="font-sm-18">
           <b-icon icon="phone" size="is-small" />
           <a :href="`tel:${intlPhone(settings.contact.phone)}`">{{ settings.contact.phone }}</a>
@@ -75,12 +75,12 @@ export default {
 }
 
 @-webkit-keyframes appear {
-   0% { left: 500px; opacity: 0; }
-   100% { left: 16px; opacity: 1; }
+   0% { opacity: 0; }
+   100% { opacity: 1; }
 }
 
 @keyframes appear {
-   0% { left: 500px; opacity: 0; }
-   100% { left: 16px; opacity: 1; }
+   0% { opacity: 0; }
+   100% { opacity: 1; }
 }
 </style>
