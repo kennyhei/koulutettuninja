@@ -15,7 +15,7 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Monipuoliset hierontapalvelut Keravalla. Olen koulutettu hieroja sekä urheiluhieroja, valmistuin vuonna 2017. Tule hierontaan nauttimaan omasta ajastasi!' },
+      { hid: 'description', name: 'description', content: 'Monipuoliset hierontapalvelut Keravalla. Sähköinen ajanvaraus. Olen koulutettu hieroja sekä urheiluhieroja (2017). Tule hierontaan nauttimaan omasta ajastasi!' },
       { name: 'robots', content: 'index, follow' }
     ],
     link: [
