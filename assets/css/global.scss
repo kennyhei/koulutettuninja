@@ -37,6 +37,7 @@ iframe {
 }
 /* Tooltip */
 .tooltip-content {
+    width: 280px !important;
     padding: 10px !important;
     background: rgb(45, 120, 146) !important;
     &:before {
