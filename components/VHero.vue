@@ -139,38 +139,41 @@ export default {
 @-webkit-keyframes snowflakes-shake {
   0% {
     -webkit-transform:translateX(0px);
-    transform:translateX(0px)
+    transform:translateX(0px);
   }
   50% {
     -webkit-transform:translateX(60px);
-    transform:translateX(60px)
+    transform:translateX(60px);
   }
   100% {
     -webkit-transform:translateX(0px);
-    transform:translateX(0px)
+    transform:translateX(0px);
   }
 }
 @keyframes snowflakes-fall {
   0%{
-    top:-15%
+    top:-80%;
   }
   100% {
-    top:90%
+    top:90%;
   }
 }
 @keyframes snowflakes-shake {
   0% {
-    transform:translateX(0px)
+    transform:translateX(0px);
   }
   50% {
-    transform:translateX(60px)
+    transform:translateX(60px);
   }
   100% {
-    transform:translateX(0px)
+    transform:translateX(0px);
   }
 }
 @keyframes snowflakes-fade {
   0% {
+    opacity: 1;
+  }
+  50% {
     opacity: 1;
   }
   100% {
@@ -180,7 +183,7 @@ export default {
 .snowflake {
   position:absolute;
   opacity: 1;
-  top:-15%;
+  top:-80%;
   z-index:9999;
   -webkit-user-select:none;
   -moz-user-select:none;
@@ -188,12 +191,12 @@ export default {
   user-select:none;
   cursor: default;
   -webkit-animation-name: snowflakes-fall, snowflakes-shake, snowflakes-fade;
-  -webkit-animation-duration: 10s,3s,10.1s;
+  -webkit-animation-duration: 15s,3s,15.1s;
   -webkit-animation-timing-function: linear,ease-in-out, linear;
   -webkit-animation-iteration-count: infinite,infinite, infinite;
   -webkit-animation-play-state: running,running, running;
   animation-name: snowflakes-fall, snowflakes-shake, snowflakes-fade;
-  animation-duration: 10s,3s,10.1s;
+  animation-duration: 15s,3s,15.1s;
   animation-timing-function: linear,ease-in-out,linear;
   animation-iteration-count: infinite,infinite,infinite;
   animation-play-state: running,running,running;
