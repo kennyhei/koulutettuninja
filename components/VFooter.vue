@@ -28,9 +28,10 @@
           <div class="social-media">
             <p><b><b-icon icon="instagram" size="is-small" /> Instagram:</b></p>
             <p><a :href="settings.contact.instagram_url">{{ settings.contact.instagram_url|accountName }}</a></p>
-
+            <!--
             <p class="mt-2"><b><b-icon icon="facebook" size="is-small" /> Facebook:</b></p>
             <p><a :href="settings.contact.facebook_url">{{ settings.contact.facebook_url|accountName }}</a></p>
+            -->
           </div>
           <div class="mt-3">
             <p><b><b-icon icon="calendar" size="is-small" /> Ajanvaraus:</b></p>
