@@ -152,7 +152,7 @@ export default {
 }
 @keyframes snowflakes-fall {
   0%{
-    top:-25%
+    top:-15%
   }
   100% {
     top:90%
@@ -180,7 +180,7 @@ export default {
 .snowflake {
   position:absolute;
   opacity: 1;
-  top:-25%;
+  top:-15%;
   z-index:9999;
   -webkit-user-select:none;
   -moz-user-select:none;
@@ -201,49 +201,49 @@ export default {
 .snowflake:nth-of-type(0) {
   left: 1%;
   -webkit-animation-delay: 0s,0s;
-  animation-delay: 0s,0s
+  animation-delay: 0s,0s;
 }
 .snowflake:nth-of-type(1) {
   left: 10%;
   -webkit-animation-delay: 1s,1s;
-  animation-delay: 1s,1s
+  animation-delay: 1s,1s;
 }.snowflake:nth-of-type(2) {
   left: 20%;
   -webkit-animation-delay: 6s,.5s;
-  animation-delay: 6s,.5s
+  animation-delay: 6s,.5s;
 }
 .snowflake:nth-of-type(3) {
   left: 30%;
   -webkit-animation-delay: 4s,2s;
-  animation-delay: 4s,2s
+  animation-delay: 4s,2s;
 }
 .snowflake:nth-of-type(4) {
   left:40%;
   -webkit-animation-delay: 2s,2s;
-  animation-delay: 2s,2s
+  animation-delay: 2s,2s;
 }
 .snowflake:nth-of-type(5) {
   left: 50%;
   -webkit-animation-delay: 8s,3s;
-  animation-delay:8s,3s
+  animation-delay:8s,3s;
 }
 .snowflake:nth-of-type(6) {
   left:60%; -webkit-animation-delay: 6s,2s;
-  animation-delay: 6s,2s
+  animation-delay: 6s,2s;
 }
 .snowflake:nth-of-type(7) {
   left:65%;
   -webkit-animation-delay:2.5s,1s;
-  animation-delay:2.5s,1s
+  animation-delay:2.5s,1s;
 }
 .snowflake:nth-of-type(8) {
   left:70%;
   -webkit-animation-delay:1s,0s;
-  animation-delay:1s,0s
+  animation-delay:1s,0s;
 }
 .snowflake:nth-of-type(9) {
   left:70%;
   -webkit-animation-delay: 3s,1.5s;
-  animation-delay:3s,1.5s
+  animation-delay:3s,1.5s;
 }
 </style>
