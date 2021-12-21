@@ -119,7 +119,7 @@ export default {
 
 .snowflake {
   color: #fff;
-  font-size: 1em;
+  font-size: 16px;
   font-family: Arial;
   text-shadow: 0 0 1px #000;
 }
