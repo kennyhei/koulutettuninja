@@ -142,8 +142,8 @@ export default {
     transform:translateX(0px)
   }
   50% {
-    -webkit-transform:translateX(80px);
-    transform:translateX(80px)
+    -webkit-transform:translateX(60px);
+    transform:translateX(60px)
   }
   100% {
     -webkit-transform:translateX(0px);
@@ -163,7 +163,7 @@ export default {
     transform:translateX(0px)
   }
   50% {
-    transform:translateX(80px)
+    transform:translateX(60px)
   }
   100% {
     transform:translateX(0px)
@@ -242,7 +242,7 @@ export default {
   animation-delay:1s,0s
 }
 .snowflake:nth-of-type(9) {
-  left:75%;
+  left:70%;
   -webkit-animation-delay: 3s,1.5s;
   animation-delay:3s,1.5s
 }
