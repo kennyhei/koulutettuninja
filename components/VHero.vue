@@ -136,7 +136,7 @@ export default {
   }
 }
 
-@-webkit-keyframes snowflakes-shake{
+@-webkit-keyframes snowflakes-shake {
   0% {
     -webkit-transform:translateX(0px);
     transform:translateX(0px)
@@ -150,15 +150,15 @@ export default {
     transform:translateX(0px)
   }
 }
-@keyframes snowflakes-fall{
+@keyframes snowflakes-fall {
   0%{
-    top:-15%
+    top:-25%
   }
   100% {
     top:90%
   }
 }
-@keyframes snowflakes-shake{
+@keyframes snowflakes-shake {
   0% {
     transform:translateX(0px)
   }
@@ -169,7 +169,7 @@ export default {
     transform:translateX(0px)
   }
 }
-@keyframes snowflakes-fade{
+@keyframes snowflakes-fade {
   0% {
     opacity: 1;
   }
@@ -180,7 +180,7 @@ export default {
 .snowflake {
   position:absolute;
   opacity: 1;
-  top:-15%;
+  top:-25%;
   z-index:9999;
   -webkit-user-select:none;
   -moz-user-select:none;
@@ -232,17 +232,17 @@ export default {
   animation-delay: 6s,2s
 }
 .snowflake:nth-of-type(7) {
-  left:70%;
+  left:65%;
   -webkit-animation-delay:2.5s,1s;
   animation-delay:2.5s,1s
 }
 .snowflake:nth-of-type(8) {
-  left:80%;
+  left:70%;
   -webkit-animation-delay:1s,0s;
   animation-delay:1s,0s
 }
 .snowflake:nth-of-type(9) {
-  left:90%;
+  left:75%;
   -webkit-animation-delay: 3s,1.5s;
   animation-delay:3s,1.5s
 }
