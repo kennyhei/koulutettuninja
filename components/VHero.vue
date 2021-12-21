@@ -10,7 +10,7 @@
   <div class="snowflake">
   ❆
   </div>
-  <div class="snowflake">
+  <div class="snowflake snowflake-3">
   ❄
   </div>
   <div class="snowflake">
@@ -19,7 +19,7 @@
   <div class="snowflake">
   ❆
   </div>
-  <div class="snowflake">
+  <div class="snowflake snowflake-3">
   ❄
   </div>
   <div class="snowflake">
@@ -28,7 +28,7 @@
   <div class="snowflake">
   ❆
   </div>
-  <div class="snowflake">
+  <div class="snowflake snowflake-3">
   ❄
   </div>
     <div class="hero-body is-flex is-flex-direction-column is-align-items-center">
@@ -123,6 +123,9 @@ export default {
   font-family: Arial;
   text-shadow: 0 0 1px #000;
 }
+.snowflake.snowflake-3 {
+  font-size: 12px;
+}
 
 @-webkit-keyframes snowflakes-fall{
   0% {
@@ -185,12 +188,12 @@ export default {
   user-select:none;
   cursor: default;
   -webkit-animation-name: snowflakes-fall, snowflakes-shake, snowflakes-fade;
-  -webkit-animation-duration: 9s,3s,9.1s;
+  -webkit-animation-duration: 10s,3s,10.1s;
   -webkit-animation-timing-function: linear,ease-in-out, linear;
   -webkit-animation-iteration-count: infinite,infinite, infinite;
   -webkit-animation-play-state: running,running, running;
   animation-name: snowflakes-fall, snowflakes-shake, snowflakes-fade;
-  animation-duration: 9s,3s,9.1s;
+  animation-duration: 10s,3s,10.1s;
   animation-timing-function: linear,ease-in-out,linear;
   animation-iteration-count: infinite,infinite,infinite;
   animation-play-state: running,running,running;
