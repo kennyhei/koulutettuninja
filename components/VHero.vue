@@ -173,9 +173,6 @@ export default {
   0% {
     opacity: 1;
   }
-  30% {
-    opacity: 1;
-  }
   100% {
     opacity: 0;
   }
@@ -194,7 +191,7 @@ export default {
 
   -webkit-animation-name: snowflakes-fall, snowflakes-shake, snowflakes-fade;
   -webkit-animation-duration: 10s, 3s, 10.1s;
-  -webkit-animation-timing-function: linear, ease-in-out, ease-in;
+  -webkit-animation-timing-function: linear, ease-in-out, linear;
   -webkit-animation-iteration-count: infinite, infinite, infinite;
   -webkit-animation-play-state: running, running, running;
 
