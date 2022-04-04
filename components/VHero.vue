@@ -15,25 +15,23 @@
         >
       </div>
       <div class="is-flex is-flex-direction-column has-text-light has-text-centered animate__animated animate__fadeIn">
-        <div class="font-sm-18">
+        <div class="font-sm-18" v-if="settings.contact.phone">
           <b-icon icon="phone" size="is-small" />
           <a :href="`tel:${intlPhone(settings.contact.phone)}`">{{ settings.contact.phone }}</a>
         </div>
-        <div class="font-sm-18">
+        <div class="font-sm-18" v-if="settings.contact.booking_url">
           <b-icon icon="calendar" size="is-small" />
           <a :href="settings.contact.booking_url">{{ settings.contact.booking_url|withoutHttp }}</a>
         </div>
         <div class="is-flex is-justify-content-center font-sm-18">
-          <div>
+          <div v-if="settings.contact.instagram_url">
             <b-icon icon="instagram" size="is-small" />
             <a :href="settings.contact.instagram_url">{{ settings.contact.instagram_url|accountName }}</a>
           </div>
-          <!--
-          <div class="ml-1">
+          <div class="ml-1" v-if="settings.contact.facebook_url">
             <b-icon icon="facebook" size="is-small" />
             <a :href="settings.contact.facebook_url">{{ settings.contact.facebook_url|accountName }}</a>
           </div>
-          -->
         </div>
       </div>
     </div>
