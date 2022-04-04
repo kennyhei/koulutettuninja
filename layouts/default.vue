@@ -60,7 +60,7 @@ export default {
   },
   created () {
     this.contents
-      .filter(content => content.show_in_navbar)
+      .filter(content => content.show_in_navbar && !content.hide_content)
       .forEach(content => {
         const sectionId = this.getSectionId(content)
         this.items.push({

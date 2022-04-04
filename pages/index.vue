@@ -3,11 +3,13 @@
     <v-hero />
     <!-- Contents -->
     <div class="container" style="padding-top: 2.25em;">
-      <v-content
-        v-for="content in contents"
-        :key="content.order"
-        :content="content"
-      />
+      <template v-for="content in contents">
+        <v-content
+          v-if="!content.hide_content"
+          :key="content.order"
+          :content="content"
+        />
+      </template>
     </div>
     <v-footer />
   </div>
