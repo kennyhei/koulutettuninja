@@ -1,15 +1,18 @@
 const formatMixin = {
   filters: {
     withoutHttp: function (url) {
+      if (!url) return url
       return url.replace('http://', '').replace('https://', '')
     },
     accountName: function (url) {
+      if (!url) return url
       const splitted = url.split('/')
       return splitted[splitted.length - 1]
     },
   },
   methods: {
     intlPhone (phone) {
+      if (!phone) return phone
       return '+358' + phone.substring(1)
     }
   }

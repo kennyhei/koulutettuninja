@@ -21,21 +21,24 @@
             <p>{{ settings.contact.location_street_address }}</p>
             <p>{{ settings.contact.location_postcode }} {{ settings.contact.location_city }}</p>
           </div>
-          <div class="phone mb-3">
+          <div class="phone mb-3" v-if="settings.contact.phone">
             <p><b><b-icon icon="phone" size="is-small" /> Puhelin:</b></p>
             <p><a :href="`tel:${intlPhone(settings.contact.phone)}`">{{ settings.contact.phone }}</a></p>
           </div>
           <div class="social-media">
-            <p><b><b-icon icon="instagram" size="is-small" /> Instagram:</b></p>
-            <p><a :href="settings.contact.instagram_url">{{ settings.contact.instagram_url|accountName }}</a></p>
-            <!--
-            <p class="mt-2"><b><b-icon icon="facebook" size="is-small" /> Facebook:</b></p>
-            <p><a :href="settings.contact.facebook_url">{{ settings.contact.facebook_url|accountName }}</a></p>
-            -->
+            <div v-if="settings.contact.instagram_url">
+              <p><b><b-icon icon="instagram" size="is-small" /> Instagram:</b></p>
+              <p><a :href="settings.contact.instagram_url">{{ settings.contact.instagram_url|accountName }}</a></p>
+            </div>
+            <div v-if="settings.contact.facebook">
+              <p class="mt-2"><b><b-icon icon="facebook" size="is-small" /> Facebook:</b></p>
+              <p><a :href="settings.contact.facebook_url">{{ settings.contact.facebook_url|accountName }}</a></p>
+            </div>
           </div>
           <div class="mt-3">
             <p><b><b-icon icon="calendar" size="is-small" /> Ajanvaraus:</b></p>
-            <p><a :href="settings.contact.booking_url">{{ settings.contact.booking_url|withoutHttp }}</a></p>
+            <p v-if="settings.contact.booking_url"><a :href="settings.contact.booking_url">{{ settings.contact.booking_url|withoutHttp }}</a></p>
+            <p v-else>–</p>
           </div>
         </div>
       </div>
