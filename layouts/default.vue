@@ -31,9 +31,11 @@
         <b-navbar-item v-smooth-scroll href="#contact" class="has-text-white">
           Yhteystiedot
         </b-navbar-item>
-        <b-navbar-item :href="settings.contact.booking_url" class="has-text-white">
-          Ajanvaraus
-        </b-navbar-item>
+        <template v-if="settings.contact.booking_url">
+          <b-navbar-item :href="settings.contact.booking_url" class="has-text-white">
+            Ajanvaraus
+          </b-navbar-item>
+        </template>
       </template>
     </b-navbar>
     <!-- Content -->
@@ -57,13 +59,15 @@ export default {
     ...mapState(['contents', 'settings'])
   },
   created () {
-    this.contents.forEach((content) => {
-      const sectionId = this.getSectionId(content)
-      this.items.push({
-        id: sectionId,
-        title: content.navbar_title || content.title
+    this.contents
+      .filter(content => content.show_in_navbar)
+      .forEach(content => {
+        const sectionId = this.getSectionId(content)
+        this.items.push({
+          id: sectionId,
+          title: content.navbar_title || content.title
+        })
       })
-    })
   },
   mounted () {
     const sectionId = '#' + this.items[0].id
