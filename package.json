@@ -17,6 +17,7 @@
     "core-js": "^3.8.3",
     "nuxt": "^2.14.12",
     "nuxt-buefy": "^0.4.4",
+    "sass": "^1.49.11",
     "vue-gtag": "^1.16.1"
   },
   "devDependencies": {
@@ -28,7 +29,6 @@
     "eslint": "^7.18.0",
     "eslint-plugin-nuxt": "^2.0.0",
     "eslint-plugin-vue": "^7.5.0",
-    "node-sass": "^5.0.0",
     "nuxt-purgecss": "^1.0.0",
     "sass-loader": "^10.1.1",
     "vue2-smooth-scroll": "^1.5.0"

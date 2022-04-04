@@ -28,6 +28,7 @@ const sectionMixin = {
       )
       title = title.replace(/[ä]/g, 'a')
       title = title.replace(/[ö]/g, 'o')
+      title = title.replace(/[\(\.\)]/g, '')
       return `${title}-${content.order}`
     }
   }

@@ -18,10 +18,11 @@ export const mutations = {
 
 export const actions = {
   async nuxtServerInit ({ commit }) {
-    const promises = []
-    promises.push(fetch(process.env.API_URL + '/general_settings/1').then(res => res.json()))
-    promises.push(fetch(process.env.API_URL + '/contents').then(res => res.json()))
-    promises.push(fetch(process.env.API_URL + '/categories').then(res => res.json()))
+    const promises = [
+      fetch(process.env.API_URL + '/general_settings/1').then(res => res.json()),
+      fetch(process.env.API_URL + '/contents').then(res => res.json()),
+      fetch(process.env.API_URL + '/categories').then(res => res.json())
+    ]
     const response = await Promise.all(promises)
     const [settings, contents, categories] = response
     commit('SET_SETTINGS', settings)
