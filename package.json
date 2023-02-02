@@ -16,7 +16,7 @@
     "animate.css": "^4.1.1",
     "core-js": "^3.8.3",
     "nuxt": "^2.14.12",
-    "nuxt-buefy": "^0.4.4",
+    "nuxt-buefy": "^0.4.24",
     "sass": "^1.49.11",
     "vue-gtag": "^1.16.1"
   },
