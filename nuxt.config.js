@@ -8,14 +8,14 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Ninja Marttinen – Koulutettu hieroja – Kerava',
+    title: 'Ninja Marttinen – Koulutettu hieroja – Jyväskylä',
     htmlAttrs: {
       lang: 'en'
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Monipuoliset hierontapalvelut Keravalla. Sähköinen ajanvaraus. Olen koulutettu hieroja sekä urheiluhieroja (2017). Tule hierontaan nauttimaan omasta ajastasi!' },
+      { hid: 'description', name: 'description', content: 'Monipuoliset hierontapalvelut Jyväskylässä. Sähköinen ajanvaraus. Olen koulutettu hieroja sekä urheiluhieroja (2017). Tule hierontaan nauttimaan omasta ajastasi!' },
       { name: 'robots', content: 'index, follow' }
     ],
     link: [
@@ -56,7 +56,7 @@ export default {
   ],
   // Sitemap
   sitemap: {
-    hostname: 'https://koulutettuninja.fi'
+    hostname: 'https://ninjamarttinen.fi'
   },
 
   publicRuntimeConfig: {

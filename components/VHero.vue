@@ -15,11 +15,11 @@
         >
       </div>
       <div class="is-flex is-flex-direction-column has-text-light has-text-centered animate__animated animate__fadeIn">
-        <div class="font-sm-18" v-if="settings.contact.phone">
+        <div class="font-sm-18 mb-2" v-if="settings.contact.phone">
           <b-icon icon="phone" size="is-small" />
           <a :href="`tel:${intlPhone(settings.contact.phone)}`">{{ settings.contact.phone }}</a>
         </div>
-        <div class="font-sm-18" v-if="settings.contact.booking_url">
+        <div class="font-sm-18 mb-2" v-if="settings.contact.booking_url">
           <b-icon icon="calendar" size="is-small" />
           <a :href="settings.contact.booking_url">{{ settings.contact.booking_url|withoutHttp }}</a>
         </div>

@@ -3,7 +3,7 @@
     <h2 class="title">Moikka! 👋</h2>
     <div id="description" :class="{ 'expanded': isExpanded }">
       <div class="content font-18">
-        <p>Marttisen Ninja tässä. Tarjoan monipuolisia hierontapalveluja Keravalla, Jaakkolan kaupunginosassa. Löydät minut osoitteesta Jaakkolantie 11, samoista tiloista Hyvän Olon Haltijattaret Oy:n kanssa.</p>
+        <p>Marttisen Ninja tässä. Tarjoan monipuolisia hierontapalveluja Jyväskylässä, Kuokkalan kaupunginosassa. Löydät minut osoitteesta Jaakkolantie 11, samoista tiloista Hyvän Olon Haltijattaret Oy:n kanssa.</p>
         <p>Valmistuin koulutetuksi hierojaksi loppuvuodesta 2017. Hierojaopinnoissa erikoistuin urheilijan lihashuoltoon, joten olen myös urheiluhieroja.</p>
         <p>Klassisen hieronnan ja urheiluhieronnan lisäksi olen suorittanut imukuppihieronta- / kuivakuppauskurssin vuonna 2017. Vuonna 2018 työskentelin kauneushoitolassa, joten sain loistavan tilaisuuden opetella myös kuumakivien käyttöä! Kuumakivihieronta ja suklaaöljyhieronta kuuluvatkin keskeisenä osana palvelutarjontaani.</p>
         <p>Varsinaista hoitofilosofiaa minulla ei ole, mutta työskentelyni keskiössä ovat kosketuksen rentouttava vaikutus, sekä ajatus siitä, että hieronta on asiakkaani <i>omaa aikaa</i>. Kun tulet hierottavakseni, sinulta ei vaadita mitään, vaan pääset rentoutumaan ja nauttimaan omasta ajastasi,  vailla kiirettä tai velvollisuuksia.</p>
