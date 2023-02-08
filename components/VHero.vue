@@ -1,5 +1,6 @@
 <template>
   <section class="hero ninja-bg is-relative">
+    <background-image v-if="settings.header_background_image" :image="settings.header_background_image" />
     <div class="hero-body is-flex is-flex-direction-column is-align-items-center">
       <h1 class="title has-text-centered has-text-light animate__animated animate__fadeInDown">
         Ninja Marttinen
@@ -41,8 +42,12 @@
 <script>
 import { mapState } from 'vuex'
 import { formatMixin } from '~/mixins/index.js'
+import BackgroundImage from '~/components/misc/BackgroundImage.vue'
 
 export default {
+  components: {
+    BackgroundImage
+  },
   mixins: [formatMixin],
   computed: {
     ...mapState(['settings'])
@@ -54,19 +59,6 @@ export default {
 .ninja-bg {
   background: rgb(49,122,149);
   background: linear-gradient(0deg, rgba(49,122,149,1) 0%, rgba(2,0,36,1) 100%);
-
-  &:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url(http://localhost:8000/media/header/2023-02-08%2022.22.20/1675887829_5fd2dab7.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
 }
 .title {
   letter-spacing: 1px;

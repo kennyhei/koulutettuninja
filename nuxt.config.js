@@ -8,7 +8,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Ninja Marttinen – Koulutettu hieroja – Jyväskylä',
+    title: 'Hieroja Ninja Marttinen – Hierontaa Jyväskylän Kuokkalassa',
     htmlAttrs: {
       lang: 'en'
     },

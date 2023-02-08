@@ -6,7 +6,7 @@
       :fixed-top="fixedTop"
       :mobile-burger="true"
       class="has-background-success"
-      style="background: rgba(2,0,36,1) !important; z-index: 10000;"
+      style="background: rgba(0,0,0,1) !important; z-index: 10000;"
     >
       <!-- Shorthand for <template v-slot:brand></template> -->
       <template #brand>
