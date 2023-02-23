@@ -20,9 +20,9 @@
       </template>
       <template #start>
         <b-navbar-item
-          v-for="item in items"
+          v-for="(item, idx) in items"
           :key="item.id"
-          v-smooth-scroll="{ offset: -35 }"
+          v-smooth-scroll="{ offset: idx === 0 ? -35 : -50 }"
           :href="`#${item.id}`"
           class="has-text-white"
         >
