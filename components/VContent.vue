@@ -26,6 +26,7 @@
           tag="a"
           :href="settings.contact.booking_url"
           target="_blank"
+          rel="noopener"
           style="color: #fff;"
         >
           Varaa aika

@@ -16,7 +16,19 @@ export default {
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: 'Monipuoliset hierontapalvelut Jyväskylässä. Sähköinen ajanvaraus. Olen koulutettu hieroja sekä urheiluhieroja (2017). Tule hierontaan nauttimaan omasta ajastasi!' },
-      { name: 'robots', content: 'index, follow' }
+      { name: 'robots', content: 'index, follow' },
+      // Open Graph / Facebook
+      { name: 'og:type', content: 'website' },
+      { name: 'og:url', content: 'https://ninjamarttinen.fi' },
+      { name: 'og:title', content: 'Hieroja Ninja Marttinen – Hierontaa Jyväskylän Kuokkalassa' },
+      { name: 'og:description', content: 'Monipuoliset hierontapalvelut Jyväskylässä. Sähköinen ajanvaraus. Olen koulutettu hieroja sekä urheiluhieroja (2017). Tule hierontaan nauttimaan omasta ajastasi!' },
+      { name: 'og:image', content: 'https://kennyhei1.eu.pythonanywhere.com/media/header/Screenshot%202023-02-08%20at%2021/1677164285_ecef59bd.webp' },
+      // Twitter
+      { name: 'twitter:card', content: 'summary_large_image' },
+      { name: 'twitter:url', content: 'https://ninjamarttinen.fi' },
+      { name: 'twitter:title', content: 'Hieroja Ninja Marttinen – Hierontaa Jyväskylän Kuokkalassa' },
+      { name: 'twitter:description', content: 'Monipuoliset hierontapalvelut Jyväskylässä. Sähköinen ajanvaraus. Olen koulutettu hieroja sekä urheiluhieroja (2017). Tule hierontaan nauttimaan omasta ajastasi!' },
+      { name: 'twitter:image', content: 'https://kennyhei1.eu.pythonanywhere.com/media/header/Screenshot%202023-02-08%20at%2021/1677164285_ecef59bd.webp' },
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
