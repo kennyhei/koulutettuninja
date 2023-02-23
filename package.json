@@ -11,26 +11,26 @@
     "lint": "yarn lint:js"
   },
   "dependencies": {
-    "@nuxtjs/robots": "^2.4.2",
+    "@nuxtjs/robots": "^2.5.0",
     "@nuxtjs/sitemap": "^2.4.0",
     "animate.css": "^4.1.1",
-    "core-js": "^3.8.3",
-    "nuxt": "^2.14.12",
+    "core-js": "^3.28.0",
+    "nuxt": "^2.16.1",
     "nuxt-buefy": "^0.4.24",
-    "sass": "^1.49.11",
+    "sass": "^1.58.3",
     "vue-gtag": "^1.16.1"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^5.0.0",
-    "@nuxtjs/eslint-module": "^3.0.2",
+    "@nuxtjs/eslint-module": "^3.1.0",
     "@nuxtjs/google-analytics": "^2.4.0",
     "babel-eslint": "^10.1.0",
     "dotenv": "^10.0.0",
-    "eslint": "^7.18.0",
+    "eslint": "^7.32.0",
     "eslint-plugin-nuxt": "^2.0.0",
-    "eslint-plugin-vue": "^7.5.0",
+    "eslint-plugin-vue": "^7.20.0",
     "nuxt-purgecss": "^1.0.0",
-    "sass-loader": "^10.1.1",
-    "vue2-smooth-scroll": "^1.5.0"
+    "sass-loader": "^10.4.1",
+    "vue2-smooth-scroll": "^1.6.0"
   }
 }
