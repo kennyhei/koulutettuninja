@@ -40,6 +40,9 @@
     </b-navbar>
     <!-- Content -->
     <nuxt />
+    <footer class="copyright is-flex is-justify-content-center is-align-items-center has-text-light">
+      © 2023 Hyvinvointipalvelut Ninja Marttinen Tmi
+    </footer>
   </div>
 </template>
 
@@ -106,5 +109,9 @@ export default {
   .navbar-menu {
     background-color: initial;
   }
+}
+.copyright {
+  background: rgba(0,0,0,1);
+  min-height: 3.25rem;
 }
 </style>
