@@ -34,4 +34,16 @@ const sectionMixin = {
   }
 }
 
-export { formatMixin, sectionMixin }
+const utilsMixin = {
+  methods: {
+    hasAddress: function (contact) {
+      return (
+        contact.company_name &&
+        contact.location_street_address &&
+        contact.location_city
+      )
+    }
+  }
+}
+
+export { formatMixin, sectionMixin, utilsMixin }

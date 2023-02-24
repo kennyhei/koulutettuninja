@@ -11,6 +11,7 @@
               style="border:0;"
               allowfullscreen=""
               loading="lazy"
+              title="Osoite"
             />
           </div>
         </div>

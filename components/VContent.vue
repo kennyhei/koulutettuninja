@@ -21,6 +21,12 @@
     <!-- Booking button -->
     <div v-if="content.show_booking_btn" class="columns mt-3">
       <div class="column">
+        <p v-if="hasAddress(settings.contact)" class="mb-3">
+          <b-icon icon="map-marker" size="is-small" />
+          <span>
+            {{ settings.contact.company_name }} / {{ settings.contact.location_street_address }}, {{ settings.contact.location_city }}
+          </span>
+        </p>
         <b-button
           size="is-medium"
           tag="a"
@@ -40,13 +46,13 @@
 import { mapState } from 'vuex'
 
 import VPricing from '~/components/VPricing'
-import { sectionMixin } from '~/mixins/index.js'
+import { sectionMixin, utilsMixin } from '~/mixins/index.js'
 
 export default {
   components: {
     VPricing
   },
-  mixins: [sectionMixin],
+  mixins: [sectionMixin, utilsMixin],
   props: {
     content: {
       type: Object,

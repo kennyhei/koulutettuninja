@@ -16,15 +16,7 @@
         >
       </div>
       <div class="is-flex is-flex-direction-column has-text-light has-text-centered animate__animated animate__fadeIn">
-        <div class="font-sm-18 mb-2" v-if="settings.contact.phone">
-          <b-icon icon="phone" size="is-small" />
-          <a :href="`tel:${intlPhone(settings.contact.phone)}`">{{ settings.contact.phone }}</a>
-        </div>
-        <div class="font-sm-18 mb-2" v-if="settings.contact.booking_url">
-          <b-icon icon="calendar" size="is-small" />
-          <a :href="settings.contact.booking_url">{{ settings.contact.booking_url|withoutHttp }}</a>
-        </div>
-        <div class="is-flex is-justify-content-center font-sm-18">
+        <div class="is-flex is-justify-content-center font-sm-18 mb-3">
           <div v-if="settings.contact.instagram_url">
             <b-icon icon="instagram" size="is-small" />
             <a :href="settings.contact.instagram_url">{{ settings.contact.instagram_url|accountName }}</a>
@@ -34,6 +26,28 @@
             <a :href="settings.contact.facebook_url">{{ settings.contact.facebook_url|accountName }}</a>
           </div>
         </div>
+        <div class="font-sm-18 mb-3" v-if="settings.contact.phone">
+          <b-icon icon="phone" size="is-small" />
+          <a :href="`tel:${intlPhone(settings.contact.phone)}`">{{ settings.contact.phone }}</a>
+        </div>
+        <div class="font-sm-18 mb-3" v-if="hasAddress(settings.contact)">
+          <b-icon icon="map-marker" size="is-small" />
+          <span>
+            {{ settings.contact.company_name }} / {{ settings.contact.location_street_address }}, {{ settings.contact.location_city }}
+          </span>
+        </div>
+        <div class="font-sm-18" v-if="settings.contact.booking_url">
+          <b-button
+            size="is-medium"
+            tag="a"
+            :href="settings.contact.booking_url"
+            target="_blank"
+            rel="noopener"
+            style="color: #fff;"
+          >
+            Varaa aika
+          </b-button>
+        </div>
       </div>
     </div>
   </section>
@@ -41,14 +55,14 @@
 
 <script>
 import { mapState } from 'vuex'
-import { formatMixin } from '~/mixins/index.js'
+import { formatMixin, utilsMixin } from '~/mixins/index.js'
 import BackgroundImage from '~/components/misc/BackgroundImage.vue'
 
 export default {
   components: {
     BackgroundImage
   },
-  mixins: [formatMixin],
+  mixins: [formatMixin, utilsMixin],
   computed: {
     ...mapState(['settings'])
   }
