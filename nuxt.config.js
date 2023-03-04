@@ -22,13 +22,13 @@ export default {
       { name: 'og:url', content: 'https://ninjamarttinen.fi' },
       { name: 'og:title', content: 'Hieroja Ninja Marttinen – Jyväskylä, Kuokkala' },
       { name: 'og:description', content: 'Monipuoliset hierontapalvelut Jyväskylässä. Sähköinen ajanvaraus. Olen koulutettu hieroja sekä urheiluhieroja. Tule hierontaan nauttimaan omasta ajastasi!' },
-      { name: 'og:image', content: 'https://kennyhei1.eu.pythonanywhere.com/media/header/Screenshot%202023-02-23%20at%2017/1677166663_c16bc3d8.webp' },
+      { name: 'og:image', content: 'https://kennyhei1.eu.pythonanywhere.com/media/hieroja-jyvaskyla.webp' },
       // Twitter
       { name: 'twitter:card', content: 'summary_large_image' },
       { name: 'twitter:url', content: 'https://ninjamarttinen.fi' },
       { name: 'twitter:title', content: 'Hieroja Ninja Marttinen – Jyväskylä, Kuokkala' },
       { name: 'twitter:description', content: 'Monipuoliset hierontapalvelut Jyväskylässä. Sähköinen ajanvaraus. Olen koulutettu hieroja sekä urheiluhieroja. Tule hierontaan nauttimaan omasta ajastasi!' },
-      { name: 'twitter:image', content: 'https://kennyhei1.eu.pythonanywhere.com/media/header/Screenshot%202023-02-23%20at%2017/1677166663_c16bc3d8.webp' },
+      { name: 'twitter:image', content: 'https://kennyhei1.eu.pythonanywhere.com/media/hieroja-jyvaskyla.webp' },
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
