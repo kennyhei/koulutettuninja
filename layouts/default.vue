@@ -13,7 +13,7 @@
         <b-navbar-item tag="router-link" :to="{ path: '/' }">
           <img
             src="~assets/images/logo.png"
-            alt="Koulutettu Ninja"
+            alt="Koulutettu hieroja Ninja Marttinen"
             height="28"
           >
         </b-navbar-item>

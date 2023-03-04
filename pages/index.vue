@@ -30,10 +30,30 @@ export default {
     VFooter
   },
   computed: {
-    ...mapState(['contents'])
+    ...mapState(['contents', 'settings'])
   },
   mounted () {
     this.$gtag.pageview(this.$route)
+  },
+  head () {
+    return {
+      script: [{
+        type: 'application/ld+json',
+        json: {
+          '@context': 'http://schema.org',
+          '@type': 'LocalBusiness',
+          'name': 'Hieroja Ninja Marttinen – Jyväskylä, Kuokkala',
+          'description': 'Monipuoliset hierontapalvelut Jyväskylässä. Sähköinen ajanvaraus. Olen koulutettu hieroja sekä urheiluhieroja. Tule hierontaan nauttimaan omasta ajastasi!',
+          'image': this.settings.contact.header_profile_picture,
+          'telephone': this.settings.contact.phone,
+          'address': {
+            '@type': 'PostalAddress',
+            'streetAddress': `${this.settings.contact.location_street_address}, ${this.settings.contact.location_postcode} ${this.settings.contact.location_municipality}`
+          },
+          'url': 'https://ninjamarttinen.fi'
+        }
+      }]
+    }
   }
 }
 </script>

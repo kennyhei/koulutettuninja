@@ -31,7 +31,8 @@ export default {
       { name: 'twitter:image', content: 'https://kennyhei1.eu.pythonanywhere.com/media/header/Screenshot%202023-02-23%20at%2017/1677166663_c16bc3d8.webp' },
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'apple-touch-icon', type: 'image/png', href: '/ninjamarttinen_logo.png' }
     ]
   },
 

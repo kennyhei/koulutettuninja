@@ -12,7 +12,7 @@
         <img
           :src="settings.header_profile_picture"
           loading="lazy"
-          alt="Ninni"
+          alt="Koulutettu hieroja Ninja Marttinen"
         >
       </div>
       <div class="is-flex is-flex-direction-column has-text-light has-text-centered animate__animated animate__fadeIn">
