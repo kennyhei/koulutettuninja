@@ -1,7 +1,7 @@
 <template>
   <section :id="sectionId" class="section pt-3 pb-5">
     <h2 class="title">{{ content.title }}</h2>
-    <div id="description" :class="{ 'expanded': isExpanded, 'collapse-mobile': content.collapse_long_text }">
+    <div id="collapsible" :class="{ 'expanded': isExpanded, 'collapse-mobile': content.collapse_long_text }">
       <div class="content font-18">
         <p v-for="(text, index) in paragraphedText" :key="index" v-html="text" />
       </div>
@@ -82,7 +82,7 @@ section {
     display: none;
   }
   @media (max-width: 700px) {
-    #description.collapse-mobile {
+    #collapsible.collapse-mobile {
       position: relative;
       max-height: 220px;
       overflow: hidden;

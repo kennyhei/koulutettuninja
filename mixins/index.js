@@ -13,7 +13,7 @@ const formatMixin = {
   methods: {
     intlPhone (phone) {
       if (!phone) return phone
-      return '+358' + phone.substring(1)
+      return ('+358' + phone.substring(1)).replace(/\s/g, '')
     }
   }
 }

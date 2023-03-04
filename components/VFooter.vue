@@ -1,7 +1,7 @@
 <template>
   <footer id="contact" class="footer has-background-dark-light mt-5">
     <div class="container">
-      <h1 class="title">Yhteystiedot</h1>
+      <h2 class="title">Yhteystiedot</h2>
       <div class="columns is-variable is-6">
         <div class="column location is-two-thirds">
           <div>
