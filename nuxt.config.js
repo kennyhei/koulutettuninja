@@ -99,8 +99,8 @@ export default {
       'node_modules/buefy/src/scss/components/_icon.scss',
       // b-button
       'node_modules/buefy/src/components/button/*.vue',
-      // b-modal
-      'node_modules/buefy/src/components/modal/*.vue'
+      // b-collapse
+      'node_modules/buefy/src/components/collapse/*.vue'
     ],
     styleExtensions: ['.css', '.scss']
   },
