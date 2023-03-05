@@ -98,7 +98,9 @@ export default {
       'node_modules/buefy/src/components/icon/*.vue',
       'node_modules/buefy/src/scss/components/_icon.scss',
       // b-button
-      'node_modules/buefy/src/components/button/*.vue'
+      'node_modules/buefy/src/components/button/*.vue',
+      // b-modal
+      'node_modules/buefy/src/components/modal/*.vue'
     ],
     styleExtensions: ['.css', '.scss']
   },

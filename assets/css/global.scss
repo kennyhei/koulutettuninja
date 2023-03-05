@@ -67,3 +67,11 @@ a {
         width: 100%;
     }
 }
+/* Modal */
+.modal {
+    z-index: 10001;
+    .modal-card-foot button {
+        border: 1px solid #dbdbdb;
+        background-color: white;
+    }
+}
