@@ -11,11 +11,11 @@
         :class="{ 'has-text-success': showTooltip }"
         @click.native="showTooltip = !showTooltip"
         :aria-expanded="showTooltip"
-        aria-controls="tooltipContent"
+        :aria-controls="`tooltipContent-${category.id}`"
       />
     </h3>
     <!-- Service info -->
-    <b-collapse aria-id="tooltipContent" v-model="showTooltip">
+    <b-collapse :aria-id="`tooltipContent-${category.id}`" v-model="showTooltip">
       <div v-html="category.tooltip" />
       <br>
     </b-collapse>
