@@ -15,19 +15,19 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Monipuoliset hierontapalvelut Jyväskylässä. Sähköinen ajanvaraus. Olen koulutettu hieroja sekä urheiluhieroja. Tule hierontaan nauttimaan omasta ajastasi!' },
+      { hid: 'description', name: 'description', content: 'Laadukasta ja monipuolista hierontaa Jyväskylän Kuokkalassa. Olen sekä koulutettu hieroja että urheiluhieroja. Tule hierontaan nauttimaan omasta ajastasi!' },
       { name: 'robots', content: 'index, follow' },
       // Open Graph / Facebook
       { name: 'og:type', content: 'website' },
       { name: 'og:url', content: 'https://ninjamarttinen.fi' },
       { name: 'og:title', content: 'Hieroja Ninja Marttinen – Jyväskylä, Kuokkala' },
-      { name: 'og:description', content: 'Monipuoliset hierontapalvelut Jyväskylässä. Sähköinen ajanvaraus. Olen koulutettu hieroja sekä urheiluhieroja. Tule hierontaan nauttimaan omasta ajastasi!' },
+      { name: 'og:description', content: 'Laadukasta ja monipuolista hierontaa Jyväskylän Kuokkalassa. Olen sekä koulutettu hieroja että urheiluhieroja. Tule hierontaan nauttimaan omasta ajastasi!' },
       { name: 'og:image', content: 'https://kennyhei1.eu.pythonanywhere.com/media/hieroja-jyvaskyla.webp' },
       // Twitter
       { name: 'twitter:card', content: 'summary_large_image' },
       { name: 'twitter:url', content: 'https://ninjamarttinen.fi' },
       { name: 'twitter:title', content: 'Hieroja Ninja Marttinen – Jyväskylä, Kuokkala' },
-      { name: 'twitter:description', content: 'Monipuoliset hierontapalvelut Jyväskylässä. Sähköinen ajanvaraus. Olen koulutettu hieroja sekä urheiluhieroja. Tule hierontaan nauttimaan omasta ajastasi!' },
+      { name: 'twitter:description', content: 'Laadukasta ja monipuolista hierontaa Jyväskylän Kuokkalassa. Olen sekä koulutettu hieroja että urheiluhieroja. Tule hierontaan nauttimaan omasta ajastasi!' },
       { name: 'twitter:image', content: 'https://kennyhei1.eu.pythonanywhere.com/media/hieroja-jyvaskyla.webp' },
     ],
     link: [
