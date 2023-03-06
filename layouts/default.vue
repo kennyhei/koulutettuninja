@@ -33,7 +33,7 @@
         </b-navbar-item>
         <template v-if="settings.contact.booking_url">
           <b-navbar-item :href="settings.contact.booking_url" class="has-text-white">
-            Ajanvaraus
+            Ajanvaraus ({{settings.contact.company_name}})
           </b-navbar-item>
         </template>
       </template>
