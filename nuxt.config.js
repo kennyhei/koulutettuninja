@@ -70,7 +70,11 @@ export default {
   // Sitemap
   sitemap: {
     hostname: 'https://ninjamarttinen.fi',
-    lastmod: '2023-03-06'
+    defaults: {
+      changefreq: 'weekly',
+      priority: 1,
+      lastmod: new Date()
+    }
   },
 
   publicRuntimeConfig: {
