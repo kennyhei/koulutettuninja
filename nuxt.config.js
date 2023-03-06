@@ -69,7 +69,8 @@ export default {
   ],
   // Sitemap
   sitemap: {
-    hostname: 'https://ninjamarttinen.fi'
+    hostname: 'https://ninjamarttinen.fi',
+    lastmod: '2023-03-06'
   },
 
   publicRuntimeConfig: {
