@@ -20,7 +20,3 @@ $ yarn generate
 ```
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
-
-## TODO
-
-- Dynamic way to show/hide contact info
