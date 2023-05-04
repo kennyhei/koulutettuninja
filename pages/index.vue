@@ -2,7 +2,7 @@
   <div>
     <v-hero />
     <!-- Contents -->
-    <div class="container" style="padding-top: 2.25em;">
+    <div class="container is-max-widescreen" style="padding-top: 2.25em;">
       <template v-for="content in contents">
         <v-content
           v-if="!content.hide_content"
