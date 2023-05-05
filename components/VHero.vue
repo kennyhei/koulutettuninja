@@ -1,6 +1,6 @@
 <template>
   <section class="hero ninja-bg is-relative">
-    <background-image v-if="settings.header_background_image" :image="settings.header_background_image" />
+    <background-image />
     <div class="hero-body is-flex is-flex-direction-column is-align-items-center">
       <h1 class="title has-text-centered has-text-light animate__animated animate__fadeInDown">
         Ninja Marttinen
@@ -10,7 +10,7 @@
       </p>
       <div class="avatar mb-2">
         <img
-          :src="settings.header_profile_picture"
+          src="~assets/images/hieroja-jyvaskyla.webp"
           loading="lazy"
           alt="Koulutettu hieroja Ninja Marttinen"
         >

@@ -44,7 +44,7 @@ export default {
           '@type': 'LocalBusiness',
           'name': 'Hieroja Ninja Marttinen – Jyväskylä, Kuokkala',
           'description': 'Monipuoliset hierontapalvelut Jyväskylässä. Sähköinen ajanvaraus. Olen koulutettu hieroja sekä urheiluhieroja. Tule hierontaan nauttimaan omasta ajastasi!',
-          'image': this.settings.contact.header_profile_picture,
+          'image': 'https://ninjamarttinen.fi' + require('~/assets/images/hieroja-jyvaskyla.webp'),
           'telephone': this.settings.contact.phone,
           'address': {
             '@type': 'PostalAddress',

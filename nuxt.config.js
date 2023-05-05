@@ -1,6 +1,29 @@
+import fs from 'fs'
 import dotenv from 'dotenv'
+import axios from 'axios'
 
 dotenv.config({ path: '.env' })
+
+function saveImage(image, name) {
+  axios(image, { responseType: 'arraybuffer' })
+  .then(res => {
+    fs.writeFile(
+      `assets/images/${name}`, res.data, 'binary', (err) => {
+        if (err) {
+          console.log(err)
+          return
+        }
+      }
+    )
+  })
+}
+
+axios(process.env.API_URL + '/general_settings/1')
+.then(res => {
+  const { header_background_image, header_profile_picture } = res.data
+  saveImage(header_background_image, 'hieronta-jyvaskyla.webp')
+  saveImage(header_profile_picture, 'hieroja-jyvaskyla.webp')
+})
 
 export default {
   // Target: https://go.nuxtjs.dev/config-target

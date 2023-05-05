@@ -1,17 +1,18 @@
 <template>
   <div
     class="bg-image"
-    :style="{ 'background-image': `linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url('${image}')` }"
+    :style="{
+      'background-image': `linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url('${imagePath}')`
+    }"
   >
   </div>
 </template>
 
 <script>
 export default {
-  props: {
-    image: {
-      type: String,
-      required: true
+  computed: {
+    imagePath () {
+      return require('~/assets/images/hieronta-jyvaskyla.webp')
     }
   }
 }
