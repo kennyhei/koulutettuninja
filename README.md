@@ -8,7 +8,7 @@ Setup and run [koulutettuninja-api](https://github.com/kennyhei/koulutettuninja-
 
 #### Create .env file
 ```
-API_URL=http://localhost:8000
+API_URL=http://localhost:8000/api
 ```
 
 #### Run commands
