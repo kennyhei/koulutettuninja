@@ -1,6 +1,6 @@
 # ninjamarttinen
 
-Home page @ [ninjamarttinen.fi](https://ninjamarttinen.fi). Created with Nuxt.js.
+Home page of [ninjamarttinen.fi](https://ninjamarttinen.fi). Created with Nuxt.js.
 
 ## Build Setup
 
