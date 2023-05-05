@@ -5,6 +5,9 @@ import axios from 'axios'
 dotenv.config({ path: '.env' })
 
 function saveImage(image, name) {
+  if (!image) {
+    return
+  }
   axios(image, { responseType: 'arraybuffer' })
   .then(res => {
     fs.writeFile(
