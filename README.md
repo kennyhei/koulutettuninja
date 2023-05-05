@@ -4,6 +4,14 @@ Home page @ [ninjamarttinen.fi](https://ninjamarttinen.fi). Created with Nuxt.js
 
 ## Build Setup
 
+Setup and run [koulutettuninja-api](https://github.com/kennyhei/koulutettuninja-api) first as this project is dependent on it.
+
+#### Create .env file
+```
+API_URL=http://localhost:8000
+```
+
+#### Run commands
 ```bash
 # install dependencies
 $ yarn install
