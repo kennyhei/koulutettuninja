@@ -9,9 +9,6 @@
 html body {
     font-family: "NotoSansJP-Regular", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
-.mx-auto {
-    margin: 0 auto;
-}
 .font-18 {
     font-size: 18px;
 }
@@ -35,18 +32,6 @@ iframe {
         font-size: 18px;
     }
 }
-/* Tooltip */
-.tooltip-content {
-    width: 280px !important;
-    padding: 10px !important;
-    background: rgb(45, 120, 146) !important;
-    &:before {
-        border-top-color: rgb(58, 120, 146) !important;
-    }
-}
-.tooltip-trigger {
-    cursor: pointer;
-}
 a {
     color: rgb(50, 115, 220);
 }
@@ -65,13 +50,5 @@ a {
 @media (max-width: 700px) {
     .button {
         width: 100%;
-    }
-}
-/* Modal */
-.modal {
-    z-index: 10001;
-    .modal-card-foot button {
-        border: 1px solid #dbdbdb;
-        background-color: white;
     }
 }

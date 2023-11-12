@@ -1,7 +1,11 @@
 <template>
   <div class="pt-5">
     <div class="columns is-desktop is-flex-wrap-wrap">
-      <div v-for="category in pricing.categories" :key="category.order" class="column is-half-desktop is-flex-grow-1">
+      <div
+        v-for="category in pricing.categories"
+        :key="category.order"
+        class="category column is-flex-grow-1"
+      >
         <v-pricing-category :category="category" />
       </div>
     </div>
@@ -22,3 +26,9 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+.category {
+  flex-basis: 50%;
+}
+</style>
