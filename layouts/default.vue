@@ -73,7 +73,8 @@ export default {
       })
   },
   mounted () {
-    const sectionId = '#' + this.getSectionId(this.contents[0])
+    const content = this.contents.find(content => !content.hide_content)
+    const sectionId = '#' + this.getSectionId(content)
     window.addEventListener('scroll', () => {
       const scrollToElem = document.querySelector(sectionId).getBoundingClientRect().top
       if (scrollToElem <= 0) {
