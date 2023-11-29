@@ -2,7 +2,7 @@
   <footer id="contact" class="footer has-background-dark-light mt-5">
     <div class="container">
       <h2 class="title mb-3">Yhteystiedot</h2>
-      <p class="is-size-7 mb-5">Huom! Pihassa runsaasti maksutonta parkkitilaa.</p>
+      <p class="is-size-6 mb-5">Huom! Pihassa runsaasti maksutonta parkkitilaa.</p>
       <div class="columns is-variable is-6">
         <div class="column location is-two-thirds">
           <div>
