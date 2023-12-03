@@ -36,6 +36,9 @@
             Ajanvaraus ({{settings.contact.company_name}})
           </b-navbar-item>
         </template>
+        <b-navbar-item class="has-text-white" tag="router-link" :to="{ path: '/ajanvaraus' }">
+          Ajanvaraus
+        </b-navbar-item>
       </template>
     </b-navbar>
     <!-- Content -->
@@ -91,10 +94,15 @@ export default {
 .navbar-menu .navbar-item {
   &:hover {
     color: #000 !important;
+    a {
+      color: inherit !important;
+    }
   }
-
   &:focus-within {
     color: #000 !important;
+    a {
+      color: inherit !important;
+    }
   }
   &.nuxt-link-exact-active {
     color: #000 !important;
