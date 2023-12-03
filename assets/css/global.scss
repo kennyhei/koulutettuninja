@@ -21,6 +21,9 @@ html body {
 .c-pointer {
     cursor: pointer;
 }
+.hero .hero-body {
+    justify-content: center;
+}
 .hero a {
     color: #fff;
     &:hover {

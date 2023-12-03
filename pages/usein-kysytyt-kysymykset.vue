@@ -3,7 +3,7 @@
   <section class="hero is-relative is-medium">
     <background-image
       name="hieronta-jyvaskyla-ukk.webp"
-      :topOpacity="0.5"
+      :topOpacity="0.3"
       :bottomOpacity="0.3"
     />
     <div class="hero-body is-flex is-flex-direction-column is-align-items-center">
@@ -15,7 +15,7 @@
   <div class="container">
     <section class="section">
       <div class="content">
-        <p class="font-18">
+        <p class="font-18 mb-5">
             Kuinka usein kannattaa käydä hieronnassa? Saako hieronnan jälkeen saunoa?
             Käykö hieroja itse hieronnassa? Muun muassa tällaisia kysymyksiä asiakkaat
             ovat esittäneet minulle. Tällä sivulla vastaan kahteentoista usein hierojalta kysyttyyn kysymykseen.
@@ -159,10 +159,18 @@
           </div>
         </div>
       </div>
-      <p class="font-18">Terveisin,<br/>
+      <p class="font-18 mb-5">Terveisin,<br/>
         Ninja Marttinen<br/>
         Koulutettu hieroja & urheiluhieroja
       </p>
+      <nuxt-link to="/ajanvaraus">
+        <b-button
+          size="is-medium"
+          style="color: #fff;"
+        >
+          Varaa aika
+        </b-button>
+      </nuxt-link>
     </section>
   </div>
 </div>
@@ -184,21 +192,6 @@ h2.title {
 }
 .card:not(:last-child) {
   margin-bottom: 1.5rem;
-}
-
-.bg-image {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.hero .hero-body {
-  justify-content: center;
 }
 
 @media screen and (max-width: 768px) {
