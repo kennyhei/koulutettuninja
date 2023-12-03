@@ -86,11 +86,14 @@ export default {
       })
   },
   mounted () {
-    const content = this.contents.find(content => !content.hide_content)
-    const sectionId = '#' + this.getSectionId(content)
     window.addEventListener('scroll', () => {
-      const scrollToElem = document.querySelector(sectionId).getBoundingClientRect().top
-      if (scrollToElem <= 0) {
+      const heroEl = document.querySelector('.hero')
+      if (!heroEl) {
+        this.fixedTop = true
+        return
+      }
+      const scrollToElem = heroEl.getBoundingClientRect().bottom
+      if (scrollToElem <= -35) {
         this.fixedTop = true
       } else {
         this.fixedTop = false
