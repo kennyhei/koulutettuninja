@@ -2,6 +2,7 @@
   <div id="ajanvaraus">
     <div class="container">
       <h2 class="title">Ajanvaraus</h2>
+      <p class="mb-2">Huom! Kampaamo- ja parturipalvelut eivät kuulu valikoimaani.</p>
     </div>
     <!-- Embedded Timma booking calendar -->
     <iframe
