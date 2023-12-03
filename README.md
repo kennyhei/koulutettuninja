@@ -28,3 +28,7 @@ $ yarn generate
 ```
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+
+## TODO
+
+Rewrite this project with something else. Nuxt + Django is way too heavy for such a simple static site (even though there was a good reasoning behind it). Check out e.g. astro.dev.

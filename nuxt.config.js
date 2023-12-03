@@ -80,7 +80,6 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
-    '@/plugins/vue-smooth-scroll.client.js',
     '@/plugins/vue-gtag.js'
   ],
 
@@ -154,6 +153,31 @@ export default {
     subFolders: true
   },
   router: {
-    base: '/'
+    base: '/',
+    scrollBehavior: async (to, from, savedPosition) => {
+      if (savedPosition) {
+        return savedPosition
+      }
+
+      const findEl = async (hash, x) => {
+        return document.querySelector(hash) ||
+          new Promise((resolve, reject) => {
+            if (x > 50) {
+              return resolve()
+            }
+            setTimeout(() => { resolve(findEl(hash, ++x || 1)) }, 100)
+          })
+      }
+
+      if (to.hash) {
+        const el = await findEl(to.hash)
+        const top = el.getBoundingClientRect().top + document.documentElement.scrollTop - 50
+        if ('scrollBehavior' in document.documentElement.style) {
+          return window.scrollTo({ top: top, behavior: 'smooth' })
+        } else {
+          return window.scrollTo(0, top)
+        }
+      }
+    }
   }
 }

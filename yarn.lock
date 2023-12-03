@@ -6641,7 +6641,7 @@ nuxt-buefy@^0.4.26:
   dependencies:
     buefy "^0.9.25"
 
-nuxt-purgecss@1.0.0:
+nuxt-purgecss@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/nuxt-purgecss/-/nuxt-purgecss-1.0.0.tgz#7c275205f0b727a5822781908d684f2e094ff5e7"
   integrity sha512-gu6CUd+oA738Gqyl8P16HmnvreuslKVrn8tTJnjCut6OOC3pRrxqct6sAad0sxDk2fULVdeGb7V/mxo8qKisPQ==
@@ -9708,11 +9708,6 @@ vue-template-es2015-compiler@^1.9.0:
   version "1.9.1"
   resolved "https://registry.yarnpkg.com/vue-template-es2015-compiler/-/vue-template-es2015-compiler-1.9.1.tgz#1ee3bc9a16ecbf5118be334bb15f9c46f82f5825"
   integrity sha512-4gDntzrifFnCEvyoO8PqyJDmguXgVPxKiIxrBKjIowvL9l+N66196+72XVYR8BBf1Uv1Fgt3bGevJ+sEmxfZzw==
-
-vue2-smooth-scroll@^1.6.0:
-  version "1.6.0"
-  resolved "https://registry.yarnpkg.com/vue2-smooth-scroll/-/vue2-smooth-scroll-1.6.0.tgz#293a46171d2a7ddd3719e0339db753392105b7c9"
-  integrity sha512-4MvpWJf8jsJUEy9m1OnlzNJj/a3Tj1C3wgRKXpCIGiGFEVrmRppgVAijq01/WKnGA3MAGD9Ynupe64fxxwZ//g==
 
 vue@^2.7.10:
   version "2.7.15"
