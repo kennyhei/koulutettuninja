@@ -43,5 +43,10 @@ export default {
   p:not(:last-child) {
     margin-bottom: 1em;
   }
+  .container {
+    @media screen and (max-width: 1023px) {
+      padding: 0 1.5rem;
+    }
+  }
 }
 </style>
