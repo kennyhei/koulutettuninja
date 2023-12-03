@@ -42,6 +42,13 @@
         >
           Ajanvaraus
         </b-navbar-item>
+        <b-navbar-item
+          tag="router-link"
+          :to="{ path: '/ukk' }"
+          class="has-text-white"
+        >
+          Usein kysytyt kysymykset
+        </b-navbar-item>
       </template>
     </b-navbar>
     <!-- Content -->
