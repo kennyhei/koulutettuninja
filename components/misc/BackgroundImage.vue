@@ -2,7 +2,7 @@
   <div
     class="bg-image"
     :style="{
-      'background-image': `linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url('${imagePath}')`
+      'background-image': `linear-gradient(rgba(0, 0, 0, ${topOpacity}), rgba(0, 0, 0, ${bottomOpacity})), url('${imagePath}')`
     }"
   >
   </div>
@@ -10,9 +10,20 @@
 
 <script>
 export default {
+  props: {
+    name: String,
+    topOpacity: {
+      default: 0.8,
+      type: Number
+    },
+    bottomOpacity: {
+      default: 0.5,
+      type: Number
+    }
+  },
   computed: {
     imagePath () {
-      return require('~/assets/images/hieronta-jyvaskyla.webp')
+      return require(`~/assets/images/${this.name}`)
     }
   }
 }

@@ -1,6 +1,6 @@
 <template>
   <section class="hero ninja-bg is-relative">
-    <background-image />
+    <background-image name="hieronta-jyvaskyla.webp" />
     <div class="hero-body is-flex is-flex-direction-column is-align-items-center">
       <h1 class="title has-text-centered has-text-light animate__animated animate__fadeInDown">
         Ninja Marttinen
