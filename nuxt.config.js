@@ -173,8 +173,14 @@ export default {
         const el = await findEl(to.hash)
         let top = el.getBoundingClientRect().top + document.documentElement.scrollTop - 50
         const scrollPosition = document.documentElement.scrollTop
-        if (scrollPosition < 20 && from.name !== 'ajanvaraus') {
-          top -= 180
+        const isFixedNavbar = document.querySelector('.navbar.is-fixed-top')
+        if (
+          scrollPosition < 20 &&
+          from.name === 'index' &&
+          window.innerWidth < 460 &&
+          !isFixedNavbar
+        ) {
+          top -= 218
         }
         if ('scrollBehavior' in document.documentElement.style) {
           return window.scrollTo({ top: top, behavior: 'smooth' })
