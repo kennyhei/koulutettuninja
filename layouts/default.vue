@@ -23,20 +23,25 @@
           v-for="(item, idx) in items"
           :key="item.id"
           v-smooth-scroll="{ offset: idx === 0 ? -35 : -50 }"
-          :href="`#${item.id}`"
+          tag="router-link"
+          :to="{ path: '/', hash: item.id }"
           class="has-text-white"
         >
           {{ item.title }}
         </b-navbar-item>
-        <b-navbar-item v-smooth-scroll href="#contact" class="has-text-white">
+        <b-navbar-item
+          v-smooth-scroll
+          tag="router-link"
+          :to="{ path: '/', hash: 'contact' }"
+          class="has-text-white"
+        >
           Yhteystiedot
         </b-navbar-item>
-        <template v-if="settings.contact.booking_url">
-          <b-navbar-item :href="settings.contact.booking_url" class="has-text-white">
-            Ajanvaraus ({{settings.contact.company_name}})
-          </b-navbar-item>
-        </template>
-        <b-navbar-item class="has-text-white" tag="router-link" :to="{ path: '/ajanvaraus' }">
+        <b-navbar-item
+          tag="router-link"
+          :to="{ path: '/ajanvaraus' }"
+          class="has-text-white"
+        >
           Ajanvaraus
         </b-navbar-item>
       </template>
@@ -105,6 +110,7 @@ export default {
     }
   }
   &.nuxt-link-exact-active {
+    background-color: #fff !important;
     color: #000 !important;
   }
 }
