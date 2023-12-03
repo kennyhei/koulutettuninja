@@ -3,7 +3,7 @@
     <div class="container">
       <h2 class="title">Ajanvaraus</h2>
       <div class="font-18">
-        <p>Huom! Kampaamo- ja parturipalvelut eivät kuulu valikoimaani.</p>
+        <p><b>Huom!</b> Kampaamo-, parturi- ja kauneudenhoitopalvelut eivät kuulu valikoimaani.</p>
         <p class="mb-2">
           Mikäli ajanvarauskalenteri ei ilmesty näkyviin muutaman sekunnin kuluessa, voit myös varata ajan osoitteesta:
           <br/>

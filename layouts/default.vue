@@ -22,7 +22,6 @@
         <b-navbar-item
           v-for="(item, idx) in items"
           :key="item.id"
-          v-smooth-scroll="{ offset: idx === 0 ? -35 : -50 }"
           tag="router-link"
           :to="{ path: '/', hash: item.id }"
           class="has-text-white"
@@ -30,7 +29,6 @@
           {{ item.title }}
         </b-navbar-item>
         <b-navbar-item
-          v-smooth-scroll
           tag="router-link"
           :to="{ path: '/', hash: 'contact' }"
           class="has-text-white"

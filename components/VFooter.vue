@@ -39,8 +39,7 @@
           </div>
           <div class="mt-3">
             <p><b><b-icon icon="calendar" size="is-small" /> Ajanvaraus:</b></p>
-            <p v-if="settings.contact.booking_url"><a :href="settings.contact.booking_url">{{ settings.contact.booking_url|withoutHttp }}</a></p>
-            <p v-else>–</p>
+            <p><nuxt-link to="/ajanvaraus">ninjamarttinen.fi/ajanvaraus</nuxt-link></p>
           </div>
         </div>
       </div>

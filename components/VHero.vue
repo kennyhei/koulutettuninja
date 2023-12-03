@@ -36,17 +36,15 @@
             {{ settings.contact.company_name }} / {{ settings.contact.location_street_address }}, {{ settings.contact.location_city }}
           </span>
         </div>
-        <div class="font-sm-18" v-if="settings.contact.booking_url">
-          <b-button
-            size="is-medium"
-            tag="a"
-            :href="settings.contact.booking_url"
-            target="_blank"
-            rel="noopener"
-            style="color: #fff;"
-          >
-            Varaa aika
-          </b-button>
+        <div class="font-sm-18">
+          <nuxt-link to="/ajanvaraus">
+            <b-button
+              size="is-medium"
+              style="color: #fff;"
+            >
+              Varaa aika
+            </b-button>
+          </nuxt-link>
         </div>
       </div>
     </div>
