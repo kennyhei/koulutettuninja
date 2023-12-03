@@ -37,17 +37,17 @@
         </b-navbar-item>
         <b-navbar-item
           tag="router-link"
-          :to="{ path: '/ajanvaraus' }"
-          class="has-text-white"
-        >
-          Ajanvaraus
-        </b-navbar-item>
-        <b-navbar-item
-          tag="router-link"
           :to="{ path: '/usein-kysytyt-kysymykset' }"
           class="has-text-white"
         >
           Usein kysytyt kysymykset
+        </b-navbar-item>
+        <b-navbar-item
+          tag="router-link"
+          :to="{ path: '/ajanvaraus' }"
+          class="has-text-white"
+        >
+          Ajanvaraus
         </b-navbar-item>
       </template>
     </b-navbar>
