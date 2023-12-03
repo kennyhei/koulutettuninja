@@ -7,7 +7,7 @@
         Studio AK Kuokkala / Polttolinja 1, Jyväskylä
       </p>
       <div class="font-18">
-        <p class="mb-2"><b>Huom!</b> Kampaamo-, parturi-, suunnittelu- ja kauneudenhoitopalvelut eivät kuulu valikoimaani.</p>
+        <p class="mb-2"><b>Huom!</b> Kampaamo-, parturi-, suunnittelu- ja kauneudenhoitopalvelut eivät kuulu valikoimaani. Tarjoan vain hierontapalveluita!</p>
       </div>
     </div>
     <!-- Embedded Timma booking calendar -->
