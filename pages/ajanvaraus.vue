@@ -2,14 +2,12 @@
   <div id="ajanvaraus">
     <div class="container">
       <h2 class="title">Ajanvaraus</h2>
+      <p class="subtitle is-6">
+        <b-icon icon="map-marker" size="is-small" />
+        Osoite: Studio AK Kuokkala / Polttolinja 1, Jyväskylä
+      </p>
       <div class="font-18">
-        <p><b>Huom!</b> Kampaamo-, parturi- ja kauneudenhoitopalvelut eivät kuulu valikoimaani.</p>
-        <p class="mb-2">
-          Mikäli ajanvarauskalenteri ei ilmesty näkyviin muutaman sekunnin kuluessa, voit myös varata ajan osoitteesta:
-          <br/>
-          <a href="https://www.studioak.fi/ajanvaraus-24-h/">https://www.studioak.fi/ajanvaraus-24-h/</a>
-          (Kuokkalan toimipiste)          
-        </p>
+        <p class="mb-2"><b>Huom!</b> Kampaamo-, parturi- ja kauneudenhoitopalvelut eivät kuulu valikoimaani.</p>
       </div>
     </div>
     <!-- Embedded Timma booking calendar -->
@@ -19,6 +17,14 @@
       src="https://varaa.timma.fi/reservation/studioakkuokkala"
       id="reservationIframe8714">
     </iframe>
+    <div class="container">
+      <p class="mb-5 font-18">
+        Mikäli ajanvarauskalenteri ei ilmesty näkyviin muutaman sekunnin kuluessa, voit myös varata ajan osoitteesta:
+        <br/>
+        <a href="https://www.studioak.fi/ajanvaraus-24-h/">https://www.studioak.fi/ajanvaraus-24-h/</a>
+        (Kuokkalan toimipiste)          
+      </p>
+    </div>
   </div>
 </template>
 
