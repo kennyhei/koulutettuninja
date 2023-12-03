@@ -4,7 +4,7 @@
       <h2 class="title">Ajanvaraus</h2>
       <p class="subtitle is-6">
         <b-icon icon="map-marker" size="is-small" />
-        Osoite: Studio AK Kuokkala / Polttolinja 1, Jyväskylä
+        Studio AK Kuokkala / Polttolinja 1, Jyväskylä
       </p>
       <div class="font-18">
         <p class="mb-2"><b>Huom!</b> Kampaamo-, parturi- ja kauneudenhoitopalvelut eivät kuulu valikoimaani.</p>
