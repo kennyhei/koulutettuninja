@@ -188,6 +188,7 @@ export default {
           return window.scrollTo(0, top)
         }
       }
+      return window.scrollTo(0, top)
     }
   }
 }
