@@ -2,7 +2,15 @@
   <div id="ajanvaraus">
     <div class="container">
       <h2 class="title">Ajanvaraus</h2>
-      <p class="mb-2">Huom! Kampaamo- ja parturipalvelut eivät kuulu valikoimaani.</p>
+      <div class="font-18">
+        <p>Huom! Kampaamo- ja parturipalvelut eivät kuulu valikoimaani.</p>
+        <p class="mb-2">
+          Mikäli ajanvarauskalenteri ei ilmesty näkyviin muutaman sekunnin kuluessa, voit myös varata ajan osoitteesta:
+          <br/>
+          <a href="https://www.studioak.fi/ajanvaraus-24-h/">https://www.studioak.fi/ajanvaraus-24-h/</a>
+          (Kuokkalan toimipiste)          
+        </p>
+      </div>
     </div>
     <!-- Embedded Timma booking calendar -->
     <iframe
@@ -31,5 +39,9 @@ export default {
 <style lang="scss">
 #ajanvaraus {
   padding-top: 2.25em;
+
+  p:not(:last-child) {
+    margin-bottom: 1em;
+  }
 }
 </style>
