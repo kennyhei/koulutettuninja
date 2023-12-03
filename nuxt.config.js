@@ -171,7 +171,11 @@ export default {
 
       if (to.hash) {
         const el = await findEl(to.hash)
-        const top = el.getBoundingClientRect().top + document.documentElement.scrollTop - 50
+        let top = el.getBoundingClientRect().top + document.documentElement.scrollTop - 50
+        const scrollPosition = document.documentElement.scrollTop
+        if (scrollPosition < 20 && from.name !== 'ajanvaraus') {
+          top -= 180
+        }
         if ('scrollBehavior' in document.documentElement.style) {
           return window.scrollTo({ top: top, behavior: 'smooth' })
         } else {
