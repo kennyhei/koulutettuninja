@@ -128,6 +128,8 @@ export default {
       'layouts/**/*.vue',
       'pages/**/*.vue',
       'plugins/**/*.js',
+      // bulma
+      // 'node_modules/bulma/css/bulma.min.css',
       // b-navbar
       'node_modules/buefy/src/components/navbar/*.vue',
       'node_modules/buefy/src/scss/components/_navbar.scss',

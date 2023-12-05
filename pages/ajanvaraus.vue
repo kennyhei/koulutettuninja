@@ -15,7 +15,9 @@
   <div class="container" style="padding-top: 3rem;">
     <p class="subtitle is-6">
       <b-icon icon="map-marker" size="is-small" />
-      Studio AK Kuokkala / Polttolinja 1, Jyväskylä
+      Osoite: <a href="https://maps.app.goo.gl/ep5kF2dWPjCcPt7N6" target="_blank">
+        Studio AK Kuokkala / Polttolinja 1, Jyväskylä
+      </a>
     </p>
     <div class="font-18">
       <p class="mb-2"><b>Huom!</b> Kampaamo-, parturi-, suunnittelu- ja kauneudenhoitopalvelut eivät kuulu valikoimaani. Tarjoan vain hierontapalveluita!</p>
