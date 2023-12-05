@@ -33,7 +33,7 @@
     src="https://varaa.timma.fi/reservation/studioakkuokkala"
     id="reservationIframe8714">
   </iframe>
-  <div class="container">
+  <div class="wrapper">
     <p class="mb-5 font-18">
       Mikäli ajanvarauskalenteri ei ilmesty näkyviin muutaman sekunnin kuluessa, voit myös varata ajan osoitteesta:
       <br/>
