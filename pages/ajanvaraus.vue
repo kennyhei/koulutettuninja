@@ -12,13 +12,16 @@
       </h1>
     </div>
   </section>
-  <div class="container" style="padding-top: 3rem;">
-    <p class="subtitle is-6">
-      <b-icon icon="map-marker" size="is-small" />
-      Osoite: <a href="https://maps.app.goo.gl/ep5kF2dWPjCcPt7N6" target="_blank">
+  <div class="wrapper" style="padding-top: 3rem;">
+    <div class="address subtitle is-6">
+      <p class="mr-1">
+        <b-icon icon="map-marker" size="is-small" />
+        Osoite:
+      </p>
+      <a href="https://maps.app.goo.gl/ep5kF2dWPjCcPt7N6" target="_blank">
         Studio AK Kuokkala / Polttolinja 1, Jyväskylä
       </a>
-    </p>
+    </div>
     <div class="font-18">
       <p class="mb-2"><b>Huom!</b> Kampaamo-, parturi-, suunnittelu- ja kauneudenhoitopalvelut eivät kuulu valikoimaani. Tarjoan vain hierontapalveluita!</p>
     </div>
@@ -60,17 +63,30 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 #ajanvaraus {
-  p:not(:last-child) {
-    margin-bottom: 1em;
-  }
-  .container {
-    @media screen and (max-width: 1023px) {
+  .wrapper {
+    flex-grow: 1;
+    margin: 0 auto;
+    position: relative;
+    width: auto;
+    max-width: 960px;
+
+    @media screen and (max-width: 1092px) {
       padding: 0 1.5rem;
     }
+    @media screen and (min-width: 1216px) {
+      max-width: 1140px;
+    }
   }
-
+  .address {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+    p {
+      margin-bottom: 0rem;
+    }
+  }
   @media screen and (max-width: 768px) {
     .hero.is-medium .hero-body {
       padding: 8rem 1.5rem;
