@@ -15,7 +15,7 @@
 <script>
 import { mapState } from 'vuex'
 
-import VPricingCategory from '~/components/VPricingCategory'
+import VPricingCategory from '~/components/index/VPricingCategory'
 
 export default {
   components: {

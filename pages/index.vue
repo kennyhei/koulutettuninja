@@ -18,9 +18,9 @@
 <script>
 import { mapState } from 'vuex'
 
-import VHero from '~/components/VHero'
-import VContent from '~/components/VContent'
-import VFooter from '~/components/VFooter'
+import VHero from '~/components/index/VHero'
+import VContent from '~/components/index/VContent'
+import VFooter from '~/components/index/VFooter'
 
 export default {
   name: 'HomePage',
@@ -42,7 +42,7 @@ export default {
         json: {
           '@context': 'http://schema.org',
           '@type': 'LocalBusiness',
-          'name': 'Hieroja Ninja Marttinen – Jyväskylä, Kuokkala',
+          'name': 'Koulutettu hieroja Ninja Marttinen – Jyväskylä, Kuokkala',
           'description': 'Monipuoliset hierontapalvelut Jyväskylässä. Sähköinen ajanvaraus. Olen koulutettu hieroja sekä urheiluhieroja. Tule hierontaan nauttimaan omasta ajastasi!',
           'image': 'https://ninjamarttinen.fi' + require('~/assets/images/hieroja-jyvaskyla.webp'),
           'telephone': this.settings.contact.phone,

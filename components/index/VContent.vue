@@ -43,7 +43,7 @@
 <script>
 import { mapState } from 'vuex'
 
-import VPricing from '~/components/VPricing'
+import VPricing from '~/components/index/VPricing'
 import { sectionMixin, utilsMixin } from '~/mixins/index.js'
 
 export default {

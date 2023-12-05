@@ -1,17 +1,11 @@
 <template>
 <div id="ajanvaraus">
-  <section class="hero is-relative is-medium">
-    <background-image
-      name="hieronta-jyvaskyla-ajanvaraus.webp"
-      :topOpacity="0.5"
-      :bottomOpacity="0.3"
-    />
-    <div class="hero-body is-flex is-flex-direction-column is-align-items-center">
-      <h1 class="title has-text-centered has-text-light animate__animated animate__fadeInDown">
-        Ajanvaraus
-      </h1>
-    </div>
-  </section>
+  <v-page-hero
+    imgPath="hieronta-jyvaskyla-ajanvaraus.webp"
+    :imgTopOpacity="0.5"
+    :imgBottomOpacity="0.3"
+    title="Ajanvaraus"
+  />
   <div class="wrapper" style="padding-top: 3rem;">
     <div class="address subtitle is-6">
       <p class="mr-1">
@@ -45,11 +39,11 @@
 </template>
 
 <script>
-import BackgroundImage from '~/components/misc/BackgroundImage.vue'
+import VPageHero from '~/components/VPageHero'
 
 export default {
   components: {
-    BackgroundImage
+    VPageHero
   },
   mounted () {
     // Resize iframe automatically
@@ -85,11 +79,6 @@ export default {
     margin-bottom: 1rem;
     p {
       margin-bottom: 0rem;
-    }
-  }
-  @media screen and (max-width: 768px) {
-    .hero.is-medium .hero-body {
-      padding: 8rem 1.5rem;
     }
   }
 }

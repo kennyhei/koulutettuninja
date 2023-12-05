@@ -1,17 +1,11 @@
 <template>
 <div>
-  <section class="hero is-relative is-medium">
-    <background-image
-      name="hieronta-jyvaskyla-ukk.webp"
-      :topOpacity="0.3"
-      :bottomOpacity="0.3"
-    />
-    <div class="hero-body is-flex is-flex-direction-column is-align-items-center">
-      <h1 class="title has-text-centered has-text-light animate__animated animate__fadeInDown">
-        Usein kysytyt kysymykset
-      </h1>
-    </div>
-  </section>
+  <v-page-hero
+    imgPath="hieronta-jyvaskyla-ukk.webp"
+    :imgTopOpacity="0.3"
+    :imgBottomOpacity="0.3"
+    title="Usein kysytyt kysymykset"
+  />
   <div class="container">
     <section class="section">
       <div class="content">
@@ -177,11 +171,11 @@
 </template>
 
 <script>
-import BackgroundImage from '~/components/misc/BackgroundImage.vue'
+import VPageHero from '~/components/VPageHero'
 
 export default {
   components: {
-    BackgroundImage
+    VPageHero
   }
 }
 </script>
@@ -192,11 +186,5 @@ h2.title {
 }
 .card:not(:last-child) {
   margin-bottom: 1.5rem;
-}
-
-@media screen and (max-width: 768px) {
-  .hero.is-medium .hero-body {
-    padding: 8rem 1.5rem;
-  }
 }
 </style>

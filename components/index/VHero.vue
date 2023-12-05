@@ -1,6 +1,6 @@
 <template>
   <section class="hero ninja-bg is-relative">
-    <background-image name="hieronta-jyvaskyla.webp" />
+    <v-background-image name="hieronta-jyvaskyla.webp" />
     <div class="hero-body is-flex is-flex-direction-column is-align-items-center">
       <h1 class="title has-text-centered has-text-light animate__animated animate__fadeInDown">
         Ninja Marttinen
@@ -54,11 +54,11 @@
 <script>
 import { mapState } from 'vuex'
 import { formatMixin, utilsMixin } from '~/mixins/index.js'
-import BackgroundImage from '~/components/misc/BackgroundImage.vue'
+import VBackgroundImage from '~/components/VBackgroundImage'
 
 export default {
   components: {
-    BackgroundImage
+    VBackgroundImage
   },
   mixins: [formatMixin, utilsMixin],
   computed: {
