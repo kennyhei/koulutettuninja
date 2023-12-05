@@ -34,7 +34,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Hieroja Ninja Marttinen – Jyväskylä, Kuokkala',
+    title: 'Koulutettu hieroja Ninja Marttinen – Jyväskylä, Kuokkala',
     htmlAttrs: {
       lang: 'fi'
     },
@@ -46,13 +46,13 @@ export default {
       // Open Graph / Facebook
       { name: 'og:type', content: 'website' },
       { name: 'og:url', content: 'https://ninjamarttinen.fi' },
-      { name: 'og:title', content: 'Hieroja Ninja Marttinen – Jyväskylä, Kuokkala' },
+      { name: 'og:title', content: 'Koulutettu hieroja Ninja Marttinen – Jyväskylä, Kuokkala' },
       { name: 'og:description', content: 'Laadukasta ja monipuolista hierontaa Jyväskylän Kuokkalassa. Olen sekä koulutettu hieroja että urheiluhieroja. Tule hierontaan nauttimaan omasta ajastasi!' },
       { name: 'og:image', content: 'https://kennyhei1.eu.pythonanywhere.com/media/hieroja-jyvaskyla.webp' },
       // Twitter
       { name: 'twitter:card', content: 'summary_large_image' },
       { name: 'twitter:url', content: 'https://ninjamarttinen.fi' },
-      { name: 'twitter:title', content: 'Hieroja Ninja Marttinen – Jyväskylä, Kuokkala' },
+      { name: 'twitter:title', content: 'Koulutettu hieroja Ninja Marttinen – Jyväskylä, Kuokkala' },
       { name: 'twitter:description', content: 'Laadukasta ja monipuolista hierontaa Jyväskylän Kuokkalassa. Olen sekä koulutettu hieroja että urheiluhieroja. Tule hierontaan nauttimaan omasta ajastasi!' },
       { name: 'twitter:image', content: 'https://kennyhei1.eu.pythonanywhere.com/media/hieroja-jyvaskyla.webp' },
     ],
