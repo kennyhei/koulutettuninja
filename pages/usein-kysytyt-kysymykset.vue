@@ -6,10 +6,10 @@
     :imgBottomOpacity="0.3"
     title="Usein kysytyt kysymykset"
   />
-  <div class="container">
+  <div class="container is-max-widescreen">
     <section class="section">
       <div class="content">
-        <p class="font-18 mb-5">
+        <p class="font-18 mb-6">
             Kuinka usein kannattaa käydä hieronnassa? Saako hieronnan jälkeen saunoa?
             Käykö hieroja itse hieronnassa? Muun muassa tällaisia kysymyksiä asiakkaat
             ovat esittäneet minulle. Tällä sivulla vastaan kahteentoista usein hierojalta kysyttyyn kysymykseen.
