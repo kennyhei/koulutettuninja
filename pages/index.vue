@@ -32,9 +32,6 @@ export default {
   computed: {
     ...mapState(['contents', 'settings'])
   },
-  mounted () {
-    this.$gtag.pageview(this.$route)
-  },
   head () {
     return {
       script: [{
