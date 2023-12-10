@@ -155,7 +155,7 @@
       </div>
       <p class="font-18 mb-5">Terveisin,<br/>
         Ninja Marttinen<br/>
-        Koulutettu hieroja & urheiluhieroja
+        Koulutettu hieroja &amp; urheiluhieroja
       </p>
       <nuxt-link to="/ajanvaraus">
         <b-button

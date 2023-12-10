@@ -19,6 +19,14 @@
     <div class="font-18">
       <p class="mb-2"><b>Huom!</b> Kampaamo-, parturi-, suunnittelu- ja kauneudenhoitopalvelut eivät kuulu valikoimaani. Tarjoan vain hierontapalveluita!</p>
     </div>
+    <div class="font-18">
+      <p class="mb-2">
+        <b>Uutta!</b>
+        Hieron sekä torstaina että perjantaina 14.-15.12. Studio AK Voionmaankadun toimipisteellä.
+        Halutessasi voit varata ajan sinne osoitteesta <a href="https://www.studioak.fi/ajanvaraus-24-h/">https://www.studioak.fi/ajanvaraus-24-h/</a>.
+        Mikäli olet tulossa Kuokkalan toimipisteelle, varaa aika alla olevasta lomakkeesta.
+      </p>
+    </div>
   </div>
   <!-- Embedded Timma booking calendar -->
   <iframe
