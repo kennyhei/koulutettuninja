@@ -26,15 +26,17 @@
             <a :href="settings.contact.facebook_url">{{ settings.contact.facebook_url|accountName }}</a>
           </div>
         </div>
-        <div class="font-sm-18 mb-3" v-if="settings.contact.phone">
-          <b-icon icon="phone" size="is-small" />
-          <a :href="`tel:${intlPhone(settings.contact.phone)}`">{{ settings.contact.phone }}</a>
+        <div class="font-sm-18 mb-3">
+          <div>
+            <b-icon icon="map-marker" size="is-small" />
+            Studio AK Kuokkala / Polttolinja 1, Jyväskylä
+          </div>
         </div>
-        <div class="font-sm-18 mb-3" v-if="hasAddress(settings.contact)">
-          <b-icon icon="map-marker" size="is-small" />
-          <span>
-            {{ settings.contact.company_name }} / {{ settings.contact.location_street_address }}, {{ settings.contact.location_city }}
-          </span>
+        <div class="font-sm-18 mb-3">
+          <div>
+            <b-icon icon="map-marker" size="is-small" />
+            Studio AK Voionmaankatu / Voionmaankatu 15, Jyväskylä
+          </div>
         </div>
         <div class="font-sm-18">
           <nuxt-link to="/ajanvaraus">
