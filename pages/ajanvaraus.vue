@@ -7,14 +7,20 @@
     title="Ajanvaraus"
   />
   <div class="wrapper" style="padding-top: 3rem;">
-    <div class="address subtitle is-6">
-      <p class="mr-1">
-        <b-icon icon="map-marker" size="is-small" />
-        Osoite:
+    <div class="subtitle is-6">
+      <p class="mr-1 mb-1">
+        <b-icon icon="map-marker" size="is-small" /> Osoite:
       </p>
-      <a href="https://maps.app.goo.gl/ep5kF2dWPjCcPt7N6" target="_blank">
-        Studio AK Kuokkala / Polttolinja 1, Jyväskylä
-      </a>
+      <div class="mb-1">
+        – <a href="https://maps.app.goo.gl/ep5kF2dWPjCcPt7N6" target="_blank">
+          Studio AK Kuokkala / Polttolinja 1, Jyväskylä
+        </a>
+      </div>
+      <div>
+        – <a href="https://maps.app.goo.gl/nMJ8ouTguPTsPo8cA" target="_blank">
+          Studio AK Voionmaankatu / Voionmaankatu 15, Jyväskylä
+        </a>
+      </div>
     </div>
     <div class="font-18">
       <p class="mb-2"><b>Huom!</b> Kampaamo-, parturi-, suunnittelu- ja kauneudenhoitopalvelut eivät kuulu valikoimaani. Tarjoan vain hierontapalveluita!</p>
@@ -79,14 +85,6 @@ export default {
     }
     @media screen and (min-width: 1216px) {
       max-width: 1140px;
-    }
-  }
-  .address {
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 1rem;
-    p {
-      margin-bottom: 0rem;
     }
   }
 }
