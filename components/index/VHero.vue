@@ -15,7 +15,7 @@
           alt="Koulutettu hieroja Ninja Marttinen"
         >
       </div>
-      <div class="is-flex is-flex-direction-column has-text-light has-text-centered animate__animated animate__fadeIn">
+      <div class="is-flex is-flex-direction-column has-text-light has-text-centered">
         <div class="is-flex is-justify-content-center font-sm-18 mb-3">
           <div v-if="settings.contact.instagram_url">
             <b-icon icon="instagram" size="is-small" />
@@ -95,11 +95,11 @@ export default {
 
 @-webkit-keyframes appear {
    0% { opacity: 0; }
-   100% { opacity: 1; }
+   100% { opacity: 1; visibility: visible; }
 }
 
 @keyframes appear {
    0% { opacity: 0; }
-   100% { opacity: 1; }
+   100% { opacity: 1; visibility: visible; }
 }
 </style>
