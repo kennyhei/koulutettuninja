@@ -144,7 +144,8 @@ export default {
       // b-collapse
       'node_modules/buefy/src/components/collapse/*.vue'
     ],
-    styleExtensions: ['.css', '.scss']
+    styleExtensions: ['.css', '.scss'],
+    safelist: ['animate__animated', 'animate__fadeIn']
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
