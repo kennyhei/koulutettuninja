@@ -86,10 +86,10 @@ export default {
     min-height: 200px;
     border-radius: 50%;
     border: 2px solid #fff;
-    -webkit-animation: appear 3s;
-    animation: appear 3s;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
+    //-webkit-animation: appear 3s;
+    //animation: appear 3s;
+    //-webkit-animation-fill-mode: forwards;
+    //animation-fill-mode: forwards;
   }
 }
 
