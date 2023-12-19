@@ -15,7 +15,7 @@
           alt="Koulutettu hieroja Ninja Marttinen"
         >
       </div>
-      <div class="is-flex is-flex-direction-column has-text-light has-text-centered">
+      <div class="is-flex is-flex-direction-column has-text-light has-text-centered  animate__animated animate__fadeIn" style="z-index: 1;">
         <div class="is-flex is-justify-content-center font-sm-18 mb-3">
           <div v-if="settings.contact.instagram_url">
             <b-icon icon="instagram" size="is-small" />
@@ -78,6 +78,7 @@ export default {
   letter-spacing: 1px;
 }
 .avatar {
+  z-index: 1;
   img {
     object-fit: cover;
     width: 200px;
@@ -86,10 +87,10 @@ export default {
     min-height: 200px;
     border-radius: 50%;
     border: 2px solid #fff;
-    //-webkit-animation: appear 3s;
-    //animation: appear 3s;
-    //-webkit-animation-fill-mode: forwards;
-    //animation-fill-mode: forwards;
+    -webkit-animation: appear 3s;
+    animation: appear 3s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
   }
 }
 
