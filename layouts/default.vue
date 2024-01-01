@@ -54,7 +54,7 @@
     <!-- Content -->
     <nuxt />
     <footer class="copyright is-flex is-justify-content-center is-align-items-center has-text-light">
-      © 2023 Hyvinvointipalvelut Ninja Marttinen Tmi
+      © 2024 Hyvinvointipalvelut Ninja Marttinen Tmi
     </footer>
   </div>
 </template>
