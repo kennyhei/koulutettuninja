@@ -59,6 +59,11 @@ export default {
   components: {
     VPageHero
   },
+  head () {
+    return {
+      title: 'Koulutettu hieroja Ninja Marttinen – Ajanvaraus'
+    }
+  },
   mounted () {
     // Resize iframe automatically
     const script = document.createElement('script')
