@@ -176,6 +176,11 @@ import VPageHero from '~/components/VPageHero'
 export default {
   components: {
     VPageHero
+  },
+  head () {
+    return {
+      title: 'Koulutettu hieroja Ninja Marttinen – UKK'
+    }
   }
 }
 </script>
