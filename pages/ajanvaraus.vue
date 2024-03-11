@@ -12,26 +12,13 @@
         <b-icon icon="map-marker" size="is-small" /> Osoite:
       </p>
       <div class="mb-1">
-        – <a href="https://maps.app.goo.gl/ep5kF2dWPjCcPt7N6" target="_blank">
+        <a href="https://maps.app.goo.gl/ep5kF2dWPjCcPt7N6" target="_blank">
           Studio AK Kuokkala / Polttolinja 1, Jyväskylä
-        </a>
-      </div>
-      <div>
-        – <a href="https://maps.app.goo.gl/nMJ8ouTguPTsPo8cA" target="_blank">
-          Studio AK Voionmaankatu / Voionmaankatu 15, Jyväskylä
         </a>
       </div>
     </div>
     <div class="font-18">
       <p class="mb-2"><b>Huom!</b> Kampaamo-, parturi-, suunnittelu- ja kauneudenhoitopalvelut eivät kuulu valikoimaani. Tarjoan vain hierontapalveluita!</p>
-    </div>
-    <div class="font-18">
-      <p class="mb-2">
-        <b>Uutta!</b>
-        Hieron 1-2 kertaa viikossa myös Studio AK Voionmaankadun toimipisteellä.
-        Halutessasi voit varata ajan sinne osoitteesta <a href="https://www.studioak.fi/ajanvaraus-24-h/">https://www.studioak.fi/ajanvaraus-24-h/</a>.
-        Mikäli olet tulossa Kuokkalan toimipisteelle, varaa aika alla olevasta lomakkeesta.
-      </p>
     </div>
   </div>
   <!-- Embedded Timma booking calendar -->

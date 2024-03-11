@@ -32,12 +32,6 @@
             Studio AK Kuokkala / Polttolinja 1, Jyväskylä
           </div>
         </div>
-        <div class="font-sm-18 mb-3">
-          <div>
-            <b-icon icon="map-marker" size="is-small" />
-            Studio AK Voionmaankatu / Voionmaankatu 15, Jyväskylä
-          </div>
-        </div>
         <div class="font-sm-18">
           <nuxt-link to="/ajanvaraus">
             <b-button
