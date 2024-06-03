@@ -2,17 +2,17 @@
   <section class="hero ninja-bg is-relative">
     <v-background-image name="hieronta-jyvaskyla.webp" />
     <div class="hero-body is-flex is-flex-direction-column is-align-items-center">
-      <h1 class="title has-text-centered has-text-light animate__animated animate__fadeInDown">
+      <h2 class="title has-text-centered has-text-light animate__animated animate__fadeInDown">
         Ninja Marttinen
+      </h2>
+      <h1 class="subtitle has-text-centered has-text-light animate__animated animate__fadeInDown">
+        Koulutettu hieroja &amp; urheiluhieroja Jyväskylässä
       </h1>
-      <p class="subtitle has-text-centered has-text-light animate__animated animate__fadeInDown">
-        Koulutettu hieroja &amp; urheiluhieroja
-      </p>
       <div class="avatar mb-2">
         <img
           src="~assets/images/hieroja-jyvaskyla.webp"
           loading="lazy"
-          alt="Koulutettu hieroja Ninja Marttinen"
+          alt="Koulutettu hieroja Ninja Marttinen - Jyväskylä, Kuokkala"
         >
       </div>
       <div class="is-flex is-flex-direction-column has-text-light has-text-centered  animate__animated animate__fadeIn" style="z-index: 1;">
