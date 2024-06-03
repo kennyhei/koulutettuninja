@@ -4,7 +4,7 @@
     <!-- Contents -->
     <div class="container is-max-widescreen" style="padding-top: 2.25em;">
       <section class="section pb-5 pt-1" v-if="notification && notification.show_notification">
-        <b-notification type="is-warning is" :closable="false" class="font-18" v-html="notification.text" />
+        <b-notification type="is-warning" :closable="false" class="font-18" v-html="notification.text" />
       </section>
       <template v-for="content in contents">
         <v-content
