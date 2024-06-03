@@ -76,7 +76,7 @@ section {
   @media (max-width: 700px) {
     #collapsible.collapse-mobile {
       position: relative;
-      max-height: 220px;
+      max-height: 240px;
       overflow: hidden;
       transition: max-height 2.5s ease;
 

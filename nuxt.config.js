@@ -142,7 +142,9 @@ export default {
       // b-button
       'node_modules/buefy/src/components/button/*.vue',
       // b-collapse
-      'node_modules/buefy/src/components/collapse/*.vue'
+      'node_modules/buefy/src/components/collapse/*.vue',
+      // b-notification
+      'node_modules/buefy/src/components/notification/*.vue',
     ],
     styleExtensions: ['.css', '.scss'],
     safelist: ['animate__animated', 'animate__fadeIn']
